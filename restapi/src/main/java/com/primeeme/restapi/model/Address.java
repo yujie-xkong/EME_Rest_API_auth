@@ -1,3 +1,4 @@
+
 package com.primeeme.restapi.model;
 
 public class Address {
@@ -24,5 +25,12 @@ public class Address {
     public String getCity(){
         return city;
     }
+    public String getState(){
+        return state;
+    }
 
+    public Integer getPostal(){
+        return postal;
+    }
 }
+
