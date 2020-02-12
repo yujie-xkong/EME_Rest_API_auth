@@ -4,7 +4,6 @@ server:
   undertow:
     io-threads: 4
 
-
 spring:
   profiles:
     active: dev
@@ -39,29 +38,15 @@ spring:
       useGlobalDataSourceStat: true
 
 
-topic:
-  test: test
-
-group:
-  id: 1
-
 ## Mybatis配置
 mybatis:
-  typeAliasesPackage: com.mobstaz.financial.cloud?useUnicode=true&characterEncoding=utf8
+  typeAliasesPackage: com.primeeme.restapi?useUnicode=true&characterEncoding=utf8
   mapperLocations: classpath:mapper/*.xml
-  type-handlers-package: com.mobstaz.financial.cloud.config.mysqlHandler
   configuration:
     map-underscore-to-camel-case: false
 
 flyway:
   locations:classpath:/db
-
-getui:
-  serverHost: https://sms-api.yunzhenxin.com
-  userCode: LdJIOdypSZFyXHZE
-  authCode: 33fbbe15ad63239b90a3fd8bfd27ee91
-  serviceId: qnjV4mRBPrLnMou6pUDEGz
-
 
 ---
 spring: 
