@@ -1,5 +1,6 @@
 package com.primeeme.restapi.model;
 
+import java.sql.Timestamp;
 import java.text.ParseException;
 import java.util.Date;
 import java.util.List;
@@ -20,11 +21,8 @@ public class Patient {
                    List<PatientIdentifier> patientIdentifierList, Integer active_status,
                    String gender) throws ParseException
     {
-        SimpleDateFormat formatter = new SimpleDateFormat("MM/dd/yyyy");
-        Date inputDateOfBirth = formatter.parse(dateOfBirth);
         Contact patientContact = new Contact(firstName, middleName, lastName,
-                                             suffix, inputDateOfBirth, gender);
-
+                                             suffix, gender, dateOfBirth);
         this.contact = contact;
         ContactPhone = contactPhone;
         this.active_status = active_status;

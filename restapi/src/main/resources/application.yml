@@ -1,5 +1,5 @@
 server:
-  port: 9999
+  port: 8080
   max-http-header-size: 100000
   undertow:
     io-threads: 4
@@ -36,7 +36,6 @@ spring:
       connection-properties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=5000
       # 合并多个DruidDataSource的监控数据
       useGlobalDataSourceStat: true
-
 
 ## Mybatis配置
 mybatis:

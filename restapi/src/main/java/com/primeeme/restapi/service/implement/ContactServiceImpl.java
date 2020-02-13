@@ -15,4 +15,10 @@ public class ContactServiceImpl implements ContactService {
     public Contact getContactById(Integer id) {
         return contactMapper.getContactById(id);
     }
+
+    @Override
+    public int addContact(Contact contact) {
+        contactMapper.addContact(contact);
+        return contact.getContactID();
+    }
 }
