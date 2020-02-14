@@ -16,19 +16,17 @@ public class Patient {
 
     public Patient(String ssn, String firstName, String middleName, String lastName,
                    String suffix, String address1, String address2, String city, String state,
-                   Integer postal, String dateOfBirth, String phoneNumber,
-                   Integer patientID, Contact contact, String contactPhone,
-                   List<PatientIdentifier> patientIdentifierList, Integer active_status,
-                   String gender) throws ParseException
+                   Integer postal, String dateOfBirth, String contactPhone,
+                   List<PatientIdentifier> patientIdentifierList,
+                   Integer active_status, String gender) throws ParseException
     {
         Contact patientContact = new Contact(firstName, middleName, lastName,
                                              suffix, gender, dateOfBirth);
-        this.contact = contact;
+        this.ssn = ssn;
+        this.contact = new Contact(firstName, middleName, lastName, suffix, dateOfBirth, gender);
+        this.address = new Address(address1, address2, city, state, postal);
         ContactPhone = contactPhone;
         this.active_status = active_status;
-        Address patientAddress = new Address(address1, address2, city, state, postal);
-        this.ssn = ssn;
-        this.address = patientAddress;
         this.patientIdentifierList = patientIdentifierList;
     }
 }
