@@ -1,10 +1,15 @@
 package com.primeeme.restapi.model;
 
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+
 import java.sql.Timestamp;
 import java.text.ParseException;
-import java.util.Date;
 import java.util.List;
-import java.text.SimpleDateFormat;
+
+@AllArgsConstructor
+@Data
 public class Patient {
     private  Integer patientID;
     private  Contact contact;
@@ -27,6 +32,19 @@ public class Patient {
         this.address = new Address(address1, address2, city, state, postal);
         ContactPhone = contactPhone;
         this.active_status = active_status;
+
         this.patientIdentifierList = patientIdentifierList;
+    }
+
+    // For HTTP GET
+    public Patient(String ssn, String firstName, String middleName, String lastName, String suffix, String address1,
+                   String address2, String city, String state, String postal, Timestamp dateOfBirth, String gender,
+                   String contactPhone) throws ParseException {
+
+        this.ssn = ssn;
+        this.contact = new Contact(firstName, middleName, lastName, suffix, gender,dateOfBirth);
+        int postal_int = Integer.parseInt(postal);
+        this.address = new Address(address1, address2, city, state, postal_int);
+        ContactPhone = contactPhone;
     }
 }

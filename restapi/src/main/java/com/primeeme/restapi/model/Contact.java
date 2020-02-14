@@ -42,7 +42,7 @@ public class Contact {
         this.gender = gender;
     }
     // For http GET
-    public Contact(Integer id, String firstName, String middleName,
+    public Contact(String firstName, String middleName,
                    String lastName, String suffix, String gender,
                    Timestamp dateOfBirth
     ) throws ParseException {
@@ -50,7 +50,6 @@ public class Contact {
         if (dateOfBirth != null){
             inputDateOfBirth = new Date(dateOfBirth.getTime());
         }
-        this.contactID = id;
         this.firstName = firstName;
         this.middleName = middleName;
         this.lastName = lastName;
