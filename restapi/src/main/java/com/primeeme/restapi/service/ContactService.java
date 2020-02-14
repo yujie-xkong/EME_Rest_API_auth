@@ -6,4 +6,5 @@ import javax.management.Query;
 
 public interface ContactService {
     Contact getContactById(Integer id);
+    int addContact(Contact contact);
 }
