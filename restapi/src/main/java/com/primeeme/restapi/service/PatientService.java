@@ -1,4 +1,7 @@
 package com.primeeme.restapi.service;
 
-public class PatientService {
+import com.primeeme.restapi.model.Patient;
+
+public interface PatientService {
+    Patient getPatientById(Integer id);
 }

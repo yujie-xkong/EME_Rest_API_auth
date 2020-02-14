@@ -11,7 +11,6 @@ public class ContactController {
     private ContactService contactService;
     @GetMapping("/Contact/v1/getContact")
     public Contact getContactById(@RequestParam("id") Integer id){
-        System.out.println(id);
         return contactService.getContactById(id);
     }
 

@@ -1,0 +1,24 @@
+2020-02-14 04:40:46,699 INFO  c.p.restapi.RestapiauthApplicationTests(55) : Starting RestapiauthApplicationTests on xkongs-iMac.local with PID 11410 (started by xkong in /Users/xkong/Desktop/EME_Rest_API_auth/restapi)
+2020-02-14 04:40:46,700 INFO  c.p.restapi.RestapiauthApplicationTests(655) : The following profiles are active: dev
+2020-02-14 04:42:50,773 INFO  c.p.restapi.RestapiauthApplicationTests(55) : Starting RestapiauthApplicationTests on xkongs-iMac.local with PID 11451 (started by xkong in /Users/xkong/Desktop/EME_Rest_API_auth/restapi)
+2020-02-14 04:42:50,783 INFO  c.p.restapi.RestapiauthApplicationTests(655) : The following profiles are active: dev
+2020-02-14 04:44:51,310 INFO  c.p.restapi.RestapiauthApplicationTests(55) : Starting RestapiauthApplicationTests on xkongs-iMac.local with PID 11486 (started by xkong in /Users/xkong/Desktop/EME_Rest_API_auth/restapi)
+2020-02-14 04:44:51,323 INFO  c.p.restapi.RestapiauthApplicationTests(655) : The following profiles are active: dev
+2020-02-14 04:44:52,212 INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure(56) : Init DruidDataSource
+2020-02-14 04:44:54,609 INFO  com.alibaba.druid.pool.DruidDataSource(930) : {dataSource-1} inited
+2020-02-14 04:44:54,941 INFO  o.s.s.concurrent.ThreadPoolTaskExecutor(171) : Initializing ExecutorService 'applicationTaskExecutor'
+2020-02-14 04:44:55,215 INFO  c.p.restapi.RestapiauthApplicationTests(61) : Started RestapiauthApplicationTests in 4.44 seconds (JVM running for 5.336)
+2020-02-14 04:44:55,670 INFO  o.s.s.concurrent.ThreadPoolTaskExecutor(208) : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-02-14 04:44:55,680 INFO  com.alibaba.druid.pool.DruidDataSource(1825) : {dataSource-1} closed
+2020-02-14 04:55:15,068 INFO  c.p.restapi.RestapiauthApplicationTests(55) : Starting RestapiauthApplicationTests on xkongs-iMac.local with PID 11556 (started by xkong in /Users/xkong/Desktop/EME_Rest_API_auth/restapi)
+2020-02-14 04:55:15,070 INFO  c.p.restapi.RestapiauthApplicationTests(655) : The following profiles are active: dev
+2020-02-14 05:02:47,350 INFO  c.p.restapi.RestapiauthApplicationTests(55) : Starting RestapiauthApplicationTests on xkongs-iMac.local with PID 11652 (started by xkong in /Users/xkong/Desktop/EME_Rest_API_auth/restapi)
+2020-02-14 05:02:47,351 INFO  c.p.restapi.RestapiauthApplicationTests(655) : The following profiles are active: dev
+2020-02-14 05:03:44,042 INFO  c.p.restapi.RestapiauthApplicationTests(55) : Starting RestapiauthApplicationTests on xkongs-iMac.local with PID 11694 (started by xkong in /Users/xkong/Desktop/EME_Rest_API_auth/restapi)
+2020-02-14 05:03:44,044 INFO  c.p.restapi.RestapiauthApplicationTests(655) : The following profiles are active: dev
+2020-02-14 05:03:44,971 INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure(56) : Init DruidDataSource
+2020-02-14 05:03:48,559 INFO  com.alibaba.druid.pool.DruidDataSource(930) : {dataSource-1} inited
+2020-02-14 05:03:48,934 INFO  o.s.s.concurrent.ThreadPoolTaskExecutor(171) : Initializing ExecutorService 'applicationTaskExecutor'
+2020-02-14 05:03:49,283 INFO  c.p.restapi.RestapiauthApplicationTests(61) : Started RestapiauthApplicationTests in 5.669 seconds (JVM running for 6.647)
+2020-02-14 05:03:49,703 INFO  o.s.s.concurrent.ThreadPoolTaskExecutor(208) : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-02-14 05:03:49,713 INFO  com.alibaba.druid.pool.DruidDataSource(1825) : {dataSource-1} closed

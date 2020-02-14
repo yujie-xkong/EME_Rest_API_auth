@@ -11,7 +11,7 @@ import org.springframework.transaction.annotation.Transactional;
 @Repository
 @Transactional
 public interface ContactMapper {
-    @Select("select contactId, firstName, middleName, lastName, suffix, gender, dateOfBirth from EME.Contact where ContactID = #{id}")
+    @Select("select firstName, middleName, lastName, suffix, gender, dateOfBirth from EME.Contact where ContactID = #{id}")
     Contact getContactById(@Param("id") Integer id);
 
     @Options(useGeneratedKeys = true, keyProperty = "contactID")

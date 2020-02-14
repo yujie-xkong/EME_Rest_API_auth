@@ -1,21 +1,23 @@
 package com.primeeme.restapi.model;
 
-public class PatientIdentifier {
-    private final Integer patientID;
-    private final Integer identifierTypeID;
-    private final String identifierValue;
-    private final Integer active_status;
+import com.fasterxml.jackson.annotation.JsonProperty;
+import lombok.AllArgsConstructor;
+import lombok.Data;
 
-    public PatientIdentifier(Integer patientID, Integer identifierTypeID, String identifierValue, Integer active_status) {
-        this.patientID = patientID;
-        this.identifierTypeID = identifierTypeID;
+@AllArgsConstructor
+@Data
+public class PatientIdentifier {
+    private Integer patientIdentifierId;
+    private Integer patientId;
+    private Integer identifierTypeId;
+    private String identifierValue;
+    private boolean active_status = false;
+
+    public PatientIdentifier(@JsonProperty("patientId") Integer patientId,
+                             @JsonProperty("identifierTypeId") Integer identifierTypeId,
+                             @JsonProperty("identifierValue") String identifierValue){
+        this.patientId = patientId;
+        this.identifierTypeId = identifierTypeId;
         this.identifierValue = identifierValue;
-        this.active_status = active_status;
-    }
-    public Integer getIdentifierTypeID(){
-        return identifierTypeID;
-    }
-    public String getIdentifierValue(){
-        return identifierValue;
     }
 }
