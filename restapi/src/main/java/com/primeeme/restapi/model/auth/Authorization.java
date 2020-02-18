@@ -16,7 +16,7 @@ import java.util.UUID;
 @Builder
 public class Authorization {
 
-  private long AuthorizationID;
+  private int AuthorizationID;
   private int ProjectCompanyJobID ;
   private int CreatedByUserAccountID ;
   private UUID AuthorizationCode ;
@@ -33,10 +33,7 @@ public class Authorization {
   private TestReason ReasonForTest;
 
   public Authorization() {
-    OffsetDateTime utc = OffsetDateTime.now(ZoneOffset.UTC);
 
-    this.Created = Date.from(utc.toInstant());
-    this.AuthorizationCode = UUID.randomUUID();
     this.AuthorizationPatients = new ArrayList<AuthorizationPatient>();
     this.AuthorizationTestTypes = new ArrayList<AuthorizationTestType>();
   }

@@ -2,13 +2,14 @@ package com.primeeme.restapi.api;
 
 import com.primeeme.restapi.model.Contact;
 import com.primeeme.restapi.model.auth.Authorization;
+import com.primeeme.restapi.model.bo.AuthCreateRequest;
 import com.primeeme.restapi.service.AuthorizationService;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
+@Slf4j
 public class AuthController {
 
   @Autowired
@@ -19,4 +20,12 @@ public class AuthController {
     return authorizationService.selectAuthById(id);
   }
 
+  @PostMapping(path = "/fcapi/data", consumes = "application/json", produces = "application/json")
+  public String authorizationCreate(@RequestBody AuthCreateRequest authCreateRequest) {
+    log.info("received mzEncryptRequest data {}", authCreateRequest.toString());
+
+
+
+    return "1";
+  }
 }
