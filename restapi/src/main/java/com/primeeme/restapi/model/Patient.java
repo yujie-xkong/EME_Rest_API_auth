@@ -32,7 +32,6 @@ public class Patient {
         this.address = new Address(address1, address2, city, state, postal);
         ContactPhone = contactPhone;
         this.active_status = active_status;
-
         this.patientIdentifierList = patientIdentifierList;
     }
 
