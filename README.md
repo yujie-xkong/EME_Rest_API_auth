@@ -40,7 +40,7 @@ MODEL NAME | data/type | data/type | data/type
 ## Contact API 
 ## PatientIdentifier API
 ## Auth API 
-### /Authorization/v1/getAuthorization 
+### /Authorization/v1/addAuthorization 
 #### input
 example: 
 {
