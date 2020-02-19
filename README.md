@@ -42,7 +42,30 @@ MODEL NAME | data/type | data/type | data/type
 ## Auth API 
 ### /Authorization/v1/getAuthorization 
 #### input
-exaple: 
+example: 
 {
+   "UserAccountID" : "9"
+   "jobInfo":{
+      "company":${companyID}, 
+      "jobNumber":${ProjectCompanyJobID},  
+      "facility":${companyID}, 
+      "testReason":${TestReasonID}
+   },
+   "services":[
+      ${TestTypeID},
+      ${TestTypeID}
+   ],
+   "additionalInfo":{
+      "notes":"random stuff here, but should be a limit", -> AuthorizationComment
+      "purchaseOrder":"we put some purchase order here"
+   },
+   "employees":{
+      "patientID":[
+         1,
+         2,
+         3,
+         4
+      ]
+   }
 }
 #### output
