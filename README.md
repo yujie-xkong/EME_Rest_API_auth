@@ -44,7 +44,7 @@ MODEL NAME | data/type | data/type | data/type
 #### input
 example: 
 {
-   "UserAccountID" : "9"
+   "UserAccountID" : "9",
    "jobInfo":{
       "company":${companyID}, 
       "jobNumber":${ProjectCompanyJobID},  
