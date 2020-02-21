@@ -1,0 +1,411 @@
+2020-02-21 00:04:29,593 INFO  o.s.s.concurrent.ThreadPoolTaskExecutor(208) : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-02-21 00:04:29,633 INFO  com.alibaba.druid.pool.DruidDataSource(1825) : {dataSource-1} closed
+2020-02-21 00:12:04,588 INFO  com.primeeme.restapi.RestapiauthApplication(55) : Starting RestapiauthApplication on xkongs-iMac.local with PID 21151 (/Users/xkong/Desktop/EME_Rest_API_auth/restapi/target/classes started by xkong in /Users/xkong/Desktop/EME_Rest_API_auth)
+2020-02-21 00:12:04,594 INFO  com.primeeme.restapi.RestapiauthApplication(655) : The following profiles are active: dev
+2020-02-21 00:12:04,650 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor(225) : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-02-21 00:12:04,650 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor(225) : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-02-21 00:12:06,611 INFO  o.s.b.web.embedded.tomcat.TomcatWebServer(92) : Tomcat initialized with port(s): 8080 (http)
+2020-02-21 00:12:06,627 INFO  org.apache.coyote.http11.Http11NioProtocol(173) : Initializing ProtocolHandler ["http-nio-8080"]
+2020-02-21 00:12:06,628 INFO  org.apache.catalina.core.StandardService(173) : Starting service [Tomcat]
+2020-02-21 00:12:06,628 INFO  org.apache.catalina.core.StandardEngine(173) : Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-02-21 00:12:06,722 INFO  o.a.c.c.C.[Tomcat].[localhost].[/](173) : Initializing Spring embedded WebApplicationContext
+2020-02-21 00:12:06,723 INFO  o.springframework.web.context.ContextLoader(284) : Root WebApplicationContext: initialization completed in 2073 ms
+2020-02-21 00:12:06,939 INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure(56) : Init DruidDataSource
+2020-02-21 00:12:11,025 INFO  com.alibaba.druid.pool.DruidDataSource(930) : {dataSource-1} inited
+2020-02-21 00:12:11,307 INFO  o.s.s.concurrent.ThreadPoolTaskExecutor(171) : Initializing ExecutorService 'applicationTaskExecutor'
+2020-02-21 00:12:11,483 INFO  o.s.b.d.a.OptionalLiveReloadServer(58) : LiveReload server is running on port 35729
+2020-02-21 00:12:11,522 INFO  org.apache.coyote.http11.Http11NioProtocol(173) : Starting ProtocolHandler ["http-nio-8080"]
+2020-02-21 00:12:11,570 INFO  o.s.b.web.embedded.tomcat.TomcatWebServer(204) : Tomcat started on port(s): 8080 (http) with context path ''
+2020-02-21 00:12:11,575 INFO  com.primeeme.restapi.RestapiauthApplication(61) : Started RestapiauthApplication in 7.679 seconds (JVM running for 8.307)
+2020-02-21 00:12:16,767 INFO  o.a.c.c.C.[Tomcat].[localhost].[/](173) : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-02-21 00:12:16,768 INFO  o.s.web.servlet.DispatcherServlet(525) : Initializing Servlet 'dispatcherServlet'
+2020-02-21 00:12:16,778 INFO  o.s.web.servlet.DispatcherServlet(547) : Completed initialization in 9 ms
+2020-02-21 00:19:32,341 INFO  o.s.s.concurrent.ThreadPoolTaskExecutor(208) : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-02-21 00:19:32,348 INFO  com.alibaba.druid.pool.DruidDataSource(1825) : {dataSource-1} closed
+2020-02-21 00:19:36,617 INFO  com.primeeme.restapi.RestapiauthApplication(55) : Starting RestapiauthApplication on xkongs-iMac.local with PID 21182 (/Users/xkong/Desktop/EME_Rest_API_auth/restapi/target/classes started by xkong in /Users/xkong/Desktop/EME_Rest_API_auth)
+2020-02-21 00:19:36,621 INFO  com.primeeme.restapi.RestapiauthApplication(655) : The following profiles are active: dev
+2020-02-21 00:19:36,715 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor(225) : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-02-21 00:19:36,716 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor(225) : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-02-21 00:19:38,147 INFO  o.s.b.web.embedded.tomcat.TomcatWebServer(92) : Tomcat initialized with port(s): 8080 (http)
+2020-02-21 00:19:38,160 INFO  org.apache.coyote.http11.Http11NioProtocol(173) : Initializing ProtocolHandler ["http-nio-8080"]
+2020-02-21 00:19:38,161 INFO  org.apache.catalina.core.StandardService(173) : Starting service [Tomcat]
+2020-02-21 00:19:38,161 INFO  org.apache.catalina.core.StandardEngine(173) : Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-02-21 00:19:38,235 INFO  o.a.c.c.C.[Tomcat].[localhost].[/](173) : Initializing Spring embedded WebApplicationContext
+2020-02-21 00:19:38,236 INFO  o.springframework.web.context.ContextLoader(284) : Root WebApplicationContext: initialization completed in 1520 ms
+2020-02-21 00:19:38,378 INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure(56) : Init DruidDataSource
+2020-02-21 00:19:40,946 INFO  com.alibaba.druid.pool.DruidDataSource(930) : {dataSource-1} inited
+2020-02-21 00:19:41,252 INFO  o.s.s.concurrent.ThreadPoolTaskExecutor(171) : Initializing ExecutorService 'applicationTaskExecutor'
+2020-02-21 00:19:41,398 INFO  o.s.b.d.a.OptionalLiveReloadServer(58) : LiveReload server is running on port 35729
+2020-02-21 00:19:41,426 INFO  org.apache.coyote.http11.Http11NioProtocol(173) : Starting ProtocolHandler ["http-nio-8080"]
+2020-02-21 00:19:41,472 INFO  o.s.b.web.embedded.tomcat.TomcatWebServer(204) : Tomcat started on port(s): 8080 (http) with context path ''
+2020-02-21 00:19:41,476 INFO  com.primeeme.restapi.RestapiauthApplication(61) : Started RestapiauthApplication in 5.816 seconds (JVM running for 6.411)
+2020-02-21 00:19:47,419 INFO  o.a.c.c.C.[Tomcat].[localhost].[/](173) : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-02-21 00:19:47,419 INFO  o.s.web.servlet.DispatcherServlet(525) : Initializing Servlet 'dispatcherServlet'
+2020-02-21 00:19:47,428 INFO  o.s.web.servlet.DispatcherServlet(547) : Completed initialization in 8 ms
+2020-02-21 02:10:47,988 INFO  o.s.s.concurrent.ThreadPoolTaskExecutor(208) : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-02-21 02:10:48,043 INFO  com.alibaba.druid.pool.DruidDataSource(1825) : {dataSource-1} closed
+2020-02-21 02:10:57,603 INFO  com.primeeme.restapi.RestapiauthApplication(55) : Starting RestapiauthApplication on xkongs-iMac.local with PID 21478 (/Users/xkong/Desktop/EME_Rest_API_auth/restapi/target/classes started by xkong in /Users/xkong/Desktop/EME_Rest_API_auth)
+2020-02-21 02:10:57,606 INFO  com.primeeme.restapi.RestapiauthApplication(655) : The following profiles are active: dev
+2020-02-21 02:10:57,660 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor(225) : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-02-21 02:10:57,661 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor(225) : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-02-21 02:10:59,284 INFO  o.s.b.web.embedded.tomcat.TomcatWebServer(92) : Tomcat initialized with port(s): 8080 (http)
+2020-02-21 02:10:59,296 INFO  org.apache.coyote.http11.Http11NioProtocol(173) : Initializing ProtocolHandler ["http-nio-8080"]
+2020-02-21 02:10:59,297 INFO  org.apache.catalina.core.StandardService(173) : Starting service [Tomcat]
+2020-02-21 02:10:59,297 INFO  org.apache.catalina.core.StandardEngine(173) : Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-02-21 02:10:59,376 INFO  o.a.c.c.C.[Tomcat].[localhost].[/](173) : Initializing Spring embedded WebApplicationContext
+2020-02-21 02:10:59,377 INFO  o.springframework.web.context.ContextLoader(284) : Root WebApplicationContext: initialization completed in 1716 ms
+2020-02-21 02:10:59,601 INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure(56) : Init DruidDataSource
+2020-02-21 02:11:02,367 INFO  com.alibaba.druid.pool.DruidDataSource(930) : {dataSource-1} inited
+2020-02-21 02:11:02,692 INFO  o.s.s.concurrent.ThreadPoolTaskExecutor(171) : Initializing ExecutorService 'applicationTaskExecutor'
+2020-02-21 02:11:02,883 INFO  o.s.b.d.a.OptionalLiveReloadServer(58) : LiveReload server is running on port 35729
+2020-02-21 02:11:02,927 INFO  org.apache.coyote.http11.Http11NioProtocol(173) : Starting ProtocolHandler ["http-nio-8080"]
+2020-02-21 02:11:02,992 INFO  o.s.b.web.embedded.tomcat.TomcatWebServer(204) : Tomcat started on port(s): 8080 (http) with context path ''
+2020-02-21 02:11:02,997 INFO  com.primeeme.restapi.RestapiauthApplication(61) : Started RestapiauthApplication in 6.174 seconds (JVM running for 6.902)
+2020-02-21 02:12:18,377 INFO  o.a.c.c.C.[Tomcat].[localhost].[/](173) : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-02-21 02:12:18,378 INFO  o.s.web.servlet.DispatcherServlet(525) : Initializing Servlet 'dispatcherServlet'
+2020-02-21 02:12:18,390 INFO  o.s.web.servlet.DispatcherServlet(547) : Completed initialization in 11 ms
+2020-02-21 02:39:37,344 INFO  o.s.s.concurrent.ThreadPoolTaskExecutor(208) : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-02-21 02:39:37,354 INFO  com.alibaba.druid.pool.DruidDataSource(1825) : {dataSource-1} closed
+2020-02-21 02:39:45,391 INFO  com.primeeme.restapi.RestapiauthApplication(55) : Starting RestapiauthApplication on xkongs-iMac.local with PID 21565 (/Users/xkong/Desktop/EME_Rest_API_auth/restapi/target/classes started by xkong in /Users/xkong/Desktop/EME_Rest_API_auth)
+2020-02-21 02:39:45,394 INFO  com.primeeme.restapi.RestapiauthApplication(655) : The following profiles are active: dev
+2020-02-21 02:39:45,443 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor(225) : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-02-21 02:39:45,443 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor(225) : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-02-21 02:39:47,176 INFO  o.s.b.web.embedded.tomcat.TomcatWebServer(92) : Tomcat initialized with port(s): 8080 (http)
+2020-02-21 02:39:47,193 INFO  org.apache.coyote.http11.Http11NioProtocol(173) : Initializing ProtocolHandler ["http-nio-8080"]
+2020-02-21 02:39:47,193 INFO  org.apache.catalina.core.StandardService(173) : Starting service [Tomcat]
+2020-02-21 02:39:47,193 INFO  org.apache.catalina.core.StandardEngine(173) : Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-02-21 02:39:47,267 INFO  o.a.c.c.C.[Tomcat].[localhost].[/](173) : Initializing Spring embedded WebApplicationContext
+2020-02-21 02:39:47,267 INFO  o.springframework.web.context.ContextLoader(284) : Root WebApplicationContext: initialization completed in 1824 ms
+2020-02-21 02:39:47,442 INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure(56) : Init DruidDataSource
+2020-02-21 02:39:51,375 INFO  com.alibaba.druid.pool.DruidDataSource(930) : {dataSource-1} inited
+2020-02-21 02:39:51,706 INFO  o.s.s.concurrent.ThreadPoolTaskExecutor(171) : Initializing ExecutorService 'applicationTaskExecutor'
+2020-02-21 02:39:51,875 INFO  o.s.b.d.a.OptionalLiveReloadServer(58) : LiveReload server is running on port 35729
+2020-02-21 02:39:51,907 INFO  org.apache.coyote.http11.Http11NioProtocol(173) : Starting ProtocolHandler ["http-nio-8080"]
+2020-02-21 02:39:51,968 INFO  o.s.b.web.embedded.tomcat.TomcatWebServer(204) : Tomcat started on port(s): 8080 (http) with context path ''
+2020-02-21 02:39:51,972 INFO  com.primeeme.restapi.RestapiauthApplication(61) : Started RestapiauthApplication in 7.303 seconds (JVM running for 8.39)
+2020-02-21 02:39:59,007 INFO  o.a.c.c.C.[Tomcat].[localhost].[/](173) : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-02-21 02:39:59,011 INFO  o.s.web.servlet.DispatcherServlet(525) : Initializing Servlet 'dispatcherServlet'
+2020-02-21 02:39:59,024 INFO  o.s.web.servlet.DispatcherServlet(547) : Completed initialization in 12 ms
+2020-02-21 02:39:59,105 WARN  o.s.h.c.j.MappingJackson2HttpMessageConverter(127) : Failed to evaluate Jackson deserialization for type [[simple type, class com.primeeme.restapi.model.bo.PatientWrapper]]: com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Conflicting property-based creators: already had implicitly discovered creator [constructor for com.primeeme.restapi.model.PatientIdentifier, annotations: [null]], encountered another: [constructor for com.primeeme.restapi.model.PatientIdentifier, annotations: [null]]
+2020-02-21 02:39:59,108 WARN  o.s.h.c.j.MappingJackson2HttpMessageConverter(127) : Failed to evaluate Jackson deserialization for type [[simple type, class com.primeeme.restapi.model.bo.PatientWrapper]]: com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Invalid type definition for type `com.primeeme.restapi.model.Patient`: Argument #7 of constructor [constructor for com.primeeme.restapi.model.Patient, annotations: [null]] has no property name annotation; must have name when multiple-parameter constructor annotated as Creator
+2020-02-21 02:39:59,112 WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver(199) : Resolved [org.springframework.web.HttpMediaTypeNotSupportedException: Content type 'application/json;charset=UTF-8' not supported]
+2020-02-21 02:46:19,832 INFO  o.s.s.concurrent.ThreadPoolTaskExecutor(208) : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-02-21 02:46:19,953 INFO  com.alibaba.druid.pool.DruidDataSource(1825) : {dataSource-1} closed
+2020-02-21 02:46:27,244 INFO  com.primeeme.restapi.RestapiauthApplication(55) : Starting RestapiauthApplication on xkongs-iMac.local with PID 21576 (/Users/xkong/Desktop/EME_Rest_API_auth/restapi/target/classes started by xkong in /Users/xkong/Desktop/EME_Rest_API_auth)
+2020-02-21 02:46:27,247 INFO  com.primeeme.restapi.RestapiauthApplication(655) : The following profiles are active: dev
+2020-02-21 02:46:27,300 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor(225) : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-02-21 02:46:27,301 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor(225) : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-02-21 02:46:29,125 INFO  o.s.b.web.embedded.tomcat.TomcatWebServer(92) : Tomcat initialized with port(s): 8080 (http)
+2020-02-21 02:46:29,142 INFO  org.apache.coyote.http11.Http11NioProtocol(173) : Initializing ProtocolHandler ["http-nio-8080"]
+2020-02-21 02:46:29,143 INFO  org.apache.catalina.core.StandardService(173) : Starting service [Tomcat]
+2020-02-21 02:46:29,143 INFO  org.apache.catalina.core.StandardEngine(173) : Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-02-21 02:46:29,228 INFO  o.a.c.c.C.[Tomcat].[localhost].[/](173) : Initializing Spring embedded WebApplicationContext
+2020-02-21 02:46:29,229 INFO  o.springframework.web.context.ContextLoader(284) : Root WebApplicationContext: initialization completed in 1928 ms
+2020-02-21 02:46:29,458 INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure(56) : Init DruidDataSource
+2020-02-21 02:46:32,272 INFO  com.alibaba.druid.pool.DruidDataSource(930) : {dataSource-1} inited
+2020-02-21 02:46:32,550 INFO  o.s.s.concurrent.ThreadPoolTaskExecutor(171) : Initializing ExecutorService 'applicationTaskExecutor'
+2020-02-21 02:46:32,718 INFO  o.s.b.d.a.OptionalLiveReloadServer(58) : LiveReload server is running on port 35729
+2020-02-21 02:46:32,750 INFO  org.apache.coyote.http11.Http11NioProtocol(173) : Starting ProtocolHandler ["http-nio-8080"]
+2020-02-21 02:46:32,801 INFO  o.s.b.web.embedded.tomcat.TomcatWebServer(204) : Tomcat started on port(s): 8080 (http) with context path ''
+2020-02-21 02:46:32,805 INFO  com.primeeme.restapi.RestapiauthApplication(61) : Started RestapiauthApplication in 6.299 seconds (JVM running for 7.05)
+2020-02-21 02:46:46,934 INFO  o.a.c.c.C.[Tomcat].[localhost].[/](173) : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-02-21 02:46:46,935 INFO  o.s.web.servlet.DispatcherServlet(525) : Initializing Servlet 'dispatcherServlet'
+2020-02-21 02:46:46,944 INFO  o.s.web.servlet.DispatcherServlet(547) : Completed initialization in 9 ms
+2020-02-21 02:46:47,041 WARN  o.s.h.c.j.MappingJackson2HttpMessageConverter(127) : Failed to evaluate Jackson deserialization for type [[simple type, class com.primeeme.restapi.model.bo.PatientWrapper]]: com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Conflicting property-based creators: already had implicitly discovered creator [constructor for com.primeeme.restapi.model.PatientIdentifier, annotations: [null]], encountered another: [constructor for com.primeeme.restapi.model.PatientIdentifier, annotations: [null]]
+2020-02-21 02:46:47,044 WARN  o.s.h.c.j.MappingJackson2HttpMessageConverter(127) : Failed to evaluate Jackson deserialization for type [[simple type, class com.primeeme.restapi.model.bo.PatientWrapper]]: com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Invalid type definition for type `com.primeeme.restapi.model.Patient`: Argument #7 of constructor [constructor for com.primeeme.restapi.model.Patient, annotations: [null]] has no property name annotation; must have name when multiple-parameter constructor annotated as Creator
+2020-02-21 02:46:47,050 WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver(199) : Resolved [org.springframework.web.HttpMediaTypeNotSupportedException: Content type 'application/json;charset=UTF-8' not supported]
+2020-02-21 02:58:02,711 INFO  o.s.s.concurrent.ThreadPoolTaskExecutor(208) : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-02-21 02:58:02,724 INFO  com.alibaba.druid.pool.DruidDataSource(1825) : {dataSource-1} closed
+2020-02-21 02:58:16,024 INFO  com.primeeme.restapi.RestapiauthApplication(55) : Starting RestapiauthApplication on xkongs-iMac.local with PID 21598 (/Users/xkong/Desktop/EME_Rest_API_auth/restapi/target/classes started by xkong in /Users/xkong/Desktop/EME_Rest_API_auth)
+2020-02-21 02:58:16,027 INFO  com.primeeme.restapi.RestapiauthApplication(655) : The following profiles are active: dev
+2020-02-21 02:58:16,145 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor(225) : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-02-21 02:58:16,145 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor(225) : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-02-21 02:58:17,705 INFO  o.s.b.web.embedded.tomcat.TomcatWebServer(92) : Tomcat initialized with port(s): 8080 (http)
+2020-02-21 02:58:17,725 INFO  org.apache.coyote.http11.Http11NioProtocol(173) : Initializing ProtocolHandler ["http-nio-8080"]
+2020-02-21 02:58:17,726 INFO  org.apache.catalina.core.StandardService(173) : Starting service [Tomcat]
+2020-02-21 02:58:17,726 INFO  org.apache.catalina.core.StandardEngine(173) : Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-02-21 02:58:17,929 INFO  o.a.c.c.C.[Tomcat].[localhost].[/](173) : Initializing Spring embedded WebApplicationContext
+2020-02-21 02:58:17,930 INFO  o.springframework.web.context.ContextLoader(284) : Root WebApplicationContext: initialization completed in 1784 ms
+2020-02-21 02:58:18,361 INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure(56) : Init DruidDataSource
+2020-02-21 02:58:22,038 INFO  com.alibaba.druid.pool.DruidDataSource(930) : {dataSource-1} inited
+2020-02-21 02:58:22,491 INFO  o.s.s.concurrent.ThreadPoolTaskExecutor(171) : Initializing ExecutorService 'applicationTaskExecutor'
+2020-02-21 02:58:22,665 INFO  o.s.b.d.a.OptionalLiveReloadServer(58) : LiveReload server is running on port 35729
+2020-02-21 02:58:22,695 INFO  org.apache.coyote.http11.Http11NioProtocol(173) : Starting ProtocolHandler ["http-nio-8080"]
+2020-02-21 02:58:22,753 INFO  o.s.b.web.embedded.tomcat.TomcatWebServer(204) : Tomcat started on port(s): 8080 (http) with context path ''
+2020-02-21 02:58:22,756 INFO  com.primeeme.restapi.RestapiauthApplication(61) : Started RestapiauthApplication in 7.863 seconds (JVM running for 9.355)
+2020-02-21 02:58:46,143 INFO  o.a.c.c.C.[Tomcat].[localhost].[/](173) : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-02-21 02:58:46,143 INFO  o.s.web.servlet.DispatcherServlet(525) : Initializing Servlet 'dispatcherServlet'
+2020-02-21 02:58:46,156 INFO  o.s.web.servlet.DispatcherServlet(547) : Completed initialization in 12 ms
+2020-02-21 02:58:46,263 WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver(199) : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot construct instance of `com.primeeme.restapi.model.bo.PatientWrapper`, problem: `java.lang.NullPointerException`; nested exception is com.fasterxml.jackson.databind.exc.ValueInstantiationException: Cannot construct instance of `com.primeeme.restapi.model.bo.PatientWrapper`, problem: `java.lang.NullPointerException`
+ at [Source: (PushbackInputStream); line: 1, column: 469]]
+2020-02-21 03:02:34,709 INFO  o.s.s.concurrent.ThreadPoolTaskExecutor(208) : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-02-21 03:02:34,771 INFO  com.alibaba.druid.pool.DruidDataSource(1825) : {dataSource-1} closed
+2020-02-21 03:02:41,779 INFO  com.primeeme.restapi.RestapiauthApplication(55) : Starting RestapiauthApplication on xkongs-iMac.local with PID 21605 (/Users/xkong/Desktop/EME_Rest_API_auth/restapi/target/classes started by xkong in /Users/xkong/Desktop/EME_Rest_API_auth)
+2020-02-21 03:02:41,783 INFO  com.primeeme.restapi.RestapiauthApplication(655) : The following profiles are active: dev
+2020-02-21 03:02:41,900 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor(225) : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-02-21 03:02:41,900 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor(225) : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-02-21 03:02:43,367 INFO  o.s.b.web.embedded.tomcat.TomcatWebServer(92) : Tomcat initialized with port(s): 8080 (http)
+2020-02-21 03:02:43,383 INFO  org.apache.coyote.http11.Http11NioProtocol(173) : Initializing ProtocolHandler ["http-nio-8080"]
+2020-02-21 03:02:43,384 INFO  org.apache.catalina.core.StandardService(173) : Starting service [Tomcat]
+2020-02-21 03:02:43,384 INFO  org.apache.catalina.core.StandardEngine(173) : Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-02-21 03:02:43,460 INFO  o.a.c.c.C.[Tomcat].[localhost].[/](173) : Initializing Spring embedded WebApplicationContext
+2020-02-21 03:02:43,460 INFO  o.springframework.web.context.ContextLoader(284) : Root WebApplicationContext: initialization completed in 1560 ms
+2020-02-21 03:02:43,630 INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure(56) : Init DruidDataSource
+2020-02-21 03:02:46,302 INFO  com.alibaba.druid.pool.DruidDataSource(930) : {dataSource-1} inited
+2020-02-21 03:02:46,580 INFO  o.s.s.concurrent.ThreadPoolTaskExecutor(171) : Initializing ExecutorService 'applicationTaskExecutor'
+2020-02-21 03:02:46,751 INFO  o.s.b.d.a.OptionalLiveReloadServer(58) : LiveReload server is running on port 35729
+2020-02-21 03:02:46,783 INFO  org.apache.coyote.http11.Http11NioProtocol(173) : Starting ProtocolHandler ["http-nio-8080"]
+2020-02-21 03:02:46,843 INFO  o.s.b.web.embedded.tomcat.TomcatWebServer(204) : Tomcat started on port(s): 8080 (http) with context path ''
+2020-02-21 03:02:46,847 INFO  com.primeeme.restapi.RestapiauthApplication(61) : Started RestapiauthApplication in 5.947 seconds (JVM running for 6.715)
+2020-02-21 03:02:59,785 INFO  o.a.c.c.C.[Tomcat].[localhost].[/](173) : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-02-21 03:02:59,791 INFO  o.s.web.servlet.DispatcherServlet(525) : Initializing Servlet 'dispatcherServlet'
+2020-02-21 03:02:59,802 INFO  o.s.web.servlet.DispatcherServlet(547) : Completed initialization in 11 ms
+2020-02-21 03:05:57,590 INFO  o.s.s.concurrent.ThreadPoolTaskExecutor(208) : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-02-21 03:05:57,601 INFO  com.alibaba.druid.pool.DruidDataSource(1825) : {dataSource-1} closed
+2020-02-21 03:06:05,846 INFO  com.primeeme.restapi.RestapiauthApplication(55) : Starting RestapiauthApplication on xkongs-iMac.local with PID 21615 (/Users/xkong/Desktop/EME_Rest_API_auth/restapi/target/classes started by xkong in /Users/xkong/Desktop/EME_Rest_API_auth)
+2020-02-21 03:06:05,850 INFO  com.primeeme.restapi.RestapiauthApplication(655) : The following profiles are active: dev
+2020-02-21 03:06:05,944 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor(225) : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-02-21 03:06:05,945 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor(225) : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-02-21 03:06:07,364 INFO  o.s.b.web.embedded.tomcat.TomcatWebServer(92) : Tomcat initialized with port(s): 8080 (http)
+2020-02-21 03:06:07,378 INFO  org.apache.coyote.http11.Http11NioProtocol(173) : Initializing ProtocolHandler ["http-nio-8080"]
+2020-02-21 03:06:07,379 INFO  org.apache.catalina.core.StandardService(173) : Starting service [Tomcat]
+2020-02-21 03:06:07,379 INFO  org.apache.catalina.core.StandardEngine(173) : Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-02-21 03:06:07,456 INFO  o.a.c.c.C.[Tomcat].[localhost].[/](173) : Initializing Spring embedded WebApplicationContext
+2020-02-21 03:06:07,457 INFO  o.springframework.web.context.ContextLoader(284) : Root WebApplicationContext: initialization completed in 1511 ms
+2020-02-21 03:06:07,615 INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure(56) : Init DruidDataSource
+2020-02-21 03:06:11,227 INFO  com.alibaba.druid.pool.DruidDataSource(930) : {dataSource-1} inited
+2020-02-21 03:06:11,508 INFO  o.s.s.concurrent.ThreadPoolTaskExecutor(171) : Initializing ExecutorService 'applicationTaskExecutor'
+2020-02-21 03:06:11,703 INFO  o.s.b.d.a.OptionalLiveReloadServer(58) : LiveReload server is running on port 35729
+2020-02-21 03:06:11,742 INFO  org.apache.coyote.http11.Http11NioProtocol(173) : Starting ProtocolHandler ["http-nio-8080"]
+2020-02-21 03:06:11,789 INFO  o.s.b.web.embedded.tomcat.TomcatWebServer(204) : Tomcat started on port(s): 8080 (http) with context path ''
+2020-02-21 03:06:11,795 INFO  com.primeeme.restapi.RestapiauthApplication(61) : Started RestapiauthApplication in 7.039 seconds (JVM running for 8.553)
+2020-02-21 03:06:46,745 INFO  o.s.s.concurrent.ThreadPoolTaskExecutor(208) : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-02-21 03:06:46,903 INFO  com.alibaba.druid.pool.DruidDataSource(1825) : {dataSource-1} closed
+2020-02-21 03:06:51,812 INFO  com.primeeme.restapi.RestapiauthApplication(55) : Starting RestapiauthApplication on xkongs-iMac.local with PID 21619 (/Users/xkong/Desktop/EME_Rest_API_auth/restapi/target/classes started by xkong in /Users/xkong/Desktop/EME_Rest_API_auth)
+2020-02-21 03:06:51,815 INFO  com.primeeme.restapi.RestapiauthApplication(655) : The following profiles are active: dev
+2020-02-21 03:06:51,914 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor(225) : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-02-21 03:06:51,917 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor(225) : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-02-21 03:06:53,463 INFO  o.s.b.web.embedded.tomcat.TomcatWebServer(92) : Tomcat initialized with port(s): 8080 (http)
+2020-02-21 03:06:53,479 INFO  org.apache.coyote.http11.Http11NioProtocol(173) : Initializing ProtocolHandler ["http-nio-8080"]
+2020-02-21 03:06:53,479 INFO  org.apache.catalina.core.StandardService(173) : Starting service [Tomcat]
+2020-02-21 03:06:53,480 INFO  org.apache.catalina.core.StandardEngine(173) : Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-02-21 03:06:53,561 INFO  o.a.c.c.C.[Tomcat].[localhost].[/](173) : Initializing Spring embedded WebApplicationContext
+2020-02-21 03:06:53,561 INFO  o.springframework.web.context.ContextLoader(284) : Root WebApplicationContext: initialization completed in 1643 ms
+2020-02-21 03:06:53,724 INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure(56) : Init DruidDataSource
+2020-02-21 03:06:56,022 INFO  com.alibaba.druid.pool.DruidDataSource(930) : {dataSource-1} inited
+2020-02-21 03:06:56,340 INFO  o.s.s.concurrent.ThreadPoolTaskExecutor(171) : Initializing ExecutorService 'applicationTaskExecutor'
+2020-02-21 03:06:56,503 INFO  o.s.b.d.a.OptionalLiveReloadServer(58) : LiveReload server is running on port 35729
+2020-02-21 03:06:56,536 INFO  org.apache.coyote.http11.Http11NioProtocol(173) : Starting ProtocolHandler ["http-nio-8080"]
+2020-02-21 03:06:56,584 INFO  o.s.b.web.embedded.tomcat.TomcatWebServer(204) : Tomcat started on port(s): 8080 (http) with context path ''
+2020-02-21 03:06:56,589 INFO  com.primeeme.restapi.RestapiauthApplication(61) : Started RestapiauthApplication in 5.498 seconds (JVM running for 6.267)
+2020-02-21 03:07:30,063 INFO  o.a.c.c.C.[Tomcat].[localhost].[/](173) : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-02-21 03:07:30,065 INFO  o.s.web.servlet.DispatcherServlet(525) : Initializing Servlet 'dispatcherServlet'
+2020-02-21 03:07:30,079 INFO  o.s.web.servlet.DispatcherServlet(547) : Completed initialization in 13 ms
+2020-02-21 03:11:29,561 INFO  o.s.s.concurrent.ThreadPoolTaskExecutor(208) : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-02-21 03:11:29,576 INFO  com.alibaba.druid.pool.DruidDataSource(1825) : {dataSource-1} closed
+2020-02-21 03:11:33,059 INFO  com.primeeme.restapi.RestapiauthApplication(55) : Starting RestapiauthApplication on xkongs-iMac.local with PID 21633 (/Users/xkong/Desktop/EME_Rest_API_auth/restapi/target/classes started by xkong in /Users/xkong/Desktop/EME_Rest_API_auth)
+2020-02-21 03:11:33,062 INFO  com.primeeme.restapi.RestapiauthApplication(655) : The following profiles are active: dev
+2020-02-21 03:11:33,147 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor(225) : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-02-21 03:11:33,148 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor(225) : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-02-21 03:11:34,914 INFO  o.s.b.web.embedded.tomcat.TomcatWebServer(92) : Tomcat initialized with port(s): 8080 (http)
+2020-02-21 03:11:34,927 INFO  org.apache.coyote.http11.Http11NioProtocol(173) : Initializing ProtocolHandler ["http-nio-8080"]
+2020-02-21 03:11:34,927 INFO  org.apache.catalina.core.StandardService(173) : Starting service [Tomcat]
+2020-02-21 03:11:34,928 INFO  org.apache.catalina.core.StandardEngine(173) : Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-02-21 03:11:35,002 INFO  o.a.c.c.C.[Tomcat].[localhost].[/](173) : Initializing Spring embedded WebApplicationContext
+2020-02-21 03:11:35,002 INFO  o.springframework.web.context.ContextLoader(284) : Root WebApplicationContext: initialization completed in 1854 ms
+2020-02-21 03:11:35,238 INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure(56) : Init DruidDataSource
+2020-02-21 03:11:38,255 INFO  com.alibaba.druid.pool.DruidDataSource(930) : {dataSource-1} inited
+2020-02-21 03:11:38,516 INFO  o.s.s.concurrent.ThreadPoolTaskExecutor(171) : Initializing ExecutorService 'applicationTaskExecutor'
+2020-02-21 03:11:38,689 INFO  o.s.b.d.a.OptionalLiveReloadServer(58) : LiveReload server is running on port 35729
+2020-02-21 03:11:38,732 INFO  org.apache.coyote.http11.Http11NioProtocol(173) : Starting ProtocolHandler ["http-nio-8080"]
+2020-02-21 03:11:38,783 INFO  o.s.b.web.embedded.tomcat.TomcatWebServer(204) : Tomcat started on port(s): 8080 (http) with context path ''
+2020-02-21 03:11:38,788 INFO  com.primeeme.restapi.RestapiauthApplication(61) : Started RestapiauthApplication in 6.442 seconds (JVM running for 7.149)
+2020-02-21 03:11:50,665 INFO  o.a.c.c.C.[Tomcat].[localhost].[/](173) : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-02-21 03:11:50,670 INFO  o.s.web.servlet.DispatcherServlet(525) : Initializing Servlet 'dispatcherServlet'
+2020-02-21 03:11:50,679 INFO  o.s.web.servlet.DispatcherServlet(547) : Completed initialization in 9 ms
+2020-02-21 03:19:37,767 INFO  o.s.s.concurrent.ThreadPoolTaskExecutor(208) : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-02-21 03:19:37,836 INFO  com.alibaba.druid.pool.DruidDataSource(1825) : {dataSource-1} closed
+2020-02-21 03:19:43,685 INFO  com.primeeme.restapi.RestapiauthApplication(55) : Starting RestapiauthApplication on xkongs-iMac.local with PID 21661 (/Users/xkong/Desktop/EME_Rest_API_auth/restapi/target/classes started by xkong in /Users/xkong/Desktop/EME_Rest_API_auth)
+2020-02-21 03:19:43,690 INFO  com.primeeme.restapi.RestapiauthApplication(655) : The following profiles are active: dev
+2020-02-21 03:19:43,828 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor(225) : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-02-21 03:19:43,829 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor(225) : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-02-21 03:19:45,675 INFO  o.s.b.web.embedded.tomcat.TomcatWebServer(92) : Tomcat initialized with port(s): 8080 (http)
+2020-02-21 03:19:45,690 INFO  org.apache.coyote.http11.Http11NioProtocol(173) : Initializing ProtocolHandler ["http-nio-8080"]
+2020-02-21 03:19:45,690 INFO  org.apache.catalina.core.StandardService(173) : Starting service [Tomcat]
+2020-02-21 03:19:45,690 INFO  org.apache.catalina.core.StandardEngine(173) : Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-02-21 03:19:45,782 INFO  o.a.c.c.C.[Tomcat].[localhost].[/](173) : Initializing Spring embedded WebApplicationContext
+2020-02-21 03:19:45,782 INFO  o.springframework.web.context.ContextLoader(284) : Root WebApplicationContext: initialization completed in 1952 ms
+2020-02-21 03:19:45,963 INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure(56) : Init DruidDataSource
+2020-02-21 03:19:50,057 INFO  com.alibaba.druid.pool.DruidDataSource(930) : {dataSource-1} inited
+2020-02-21 03:19:50,321 INFO  o.s.s.concurrent.ThreadPoolTaskExecutor(171) : Initializing ExecutorService 'applicationTaskExecutor'
+2020-02-21 03:19:50,493 INFO  o.s.b.d.a.OptionalLiveReloadServer(58) : LiveReload server is running on port 35729
+2020-02-21 03:19:50,531 INFO  org.apache.coyote.http11.Http11NioProtocol(173) : Starting ProtocolHandler ["http-nio-8080"]
+2020-02-21 03:19:50,577 INFO  o.s.b.web.embedded.tomcat.TomcatWebServer(204) : Tomcat started on port(s): 8080 (http) with context path ''
+2020-02-21 03:19:50,581 INFO  com.primeeme.restapi.RestapiauthApplication(61) : Started RestapiauthApplication in 7.873 seconds (JVM running for 8.611)
+2020-02-21 03:20:03,273 INFO  o.a.c.c.C.[Tomcat].[localhost].[/](173) : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-02-21 03:20:03,275 INFO  o.s.web.servlet.DispatcherServlet(525) : Initializing Servlet 'dispatcherServlet'
+2020-02-21 03:20:03,285 INFO  o.s.web.servlet.DispatcherServlet(547) : Completed initialization in 10 ms
+2020-02-21 03:20:03,383 WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver(199) : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unexpected character ('}' (code 125)): was expecting double-quote to start field name; nested exception is com.fasterxml.jackson.databind.JsonMappingException: Unexpected character ('}' (code 125)): was expecting double-quote to start field name
+ at [Source: (PushbackInputStream); line: 1, column: 190] (through reference chain: com.primeeme.restapi.model.bo.PatientWrapper["patient"])]
+2020-02-21 03:35:07,770 INFO  o.s.s.concurrent.ThreadPoolTaskExecutor(208) : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-02-21 03:35:07,787 INFO  com.alibaba.druid.pool.DruidDataSource(1825) : {dataSource-1} closed
+2020-02-21 03:35:14,559 INFO  com.primeeme.restapi.RestapiauthApplication(55) : Starting RestapiauthApplication on xkongs-iMac.local with PID 21788 (/Users/xkong/Desktop/EME_Rest_API_auth/restapi/target/classes started by xkong in /Users/xkong/Desktop/EME_Rest_API_auth)
+2020-02-21 03:35:14,564 INFO  com.primeeme.restapi.RestapiauthApplication(655) : The following profiles are active: dev
+2020-02-21 03:35:14,623 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor(225) : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-02-21 03:35:14,623 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor(225) : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-02-21 03:35:16,296 INFO  o.s.b.web.embedded.tomcat.TomcatWebServer(92) : Tomcat initialized with port(s): 8080 (http)
+2020-02-21 03:35:16,321 INFO  org.apache.coyote.http11.Http11NioProtocol(173) : Initializing ProtocolHandler ["http-nio-8080"]
+2020-02-21 03:35:16,322 INFO  org.apache.catalina.core.StandardService(173) : Starting service [Tomcat]
+2020-02-21 03:35:16,322 INFO  org.apache.catalina.core.StandardEngine(173) : Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-02-21 03:35:16,394 INFO  o.a.c.c.C.[Tomcat].[localhost].[/](173) : Initializing Spring embedded WebApplicationContext
+2020-02-21 03:35:16,395 INFO  o.springframework.web.context.ContextLoader(284) : Root WebApplicationContext: initialization completed in 1771 ms
+2020-02-21 03:35:16,543 INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure(56) : Init DruidDataSource
+2020-02-21 03:35:20,034 INFO  com.alibaba.druid.pool.DruidDataSource(930) : {dataSource-1} inited
+2020-02-21 03:35:20,364 INFO  o.s.s.concurrent.ThreadPoolTaskExecutor(171) : Initializing ExecutorService 'applicationTaskExecutor'
+2020-02-21 03:35:20,518 INFO  o.s.b.d.a.OptionalLiveReloadServer(58) : LiveReload server is running on port 35729
+2020-02-21 03:35:20,548 INFO  org.apache.coyote.http11.Http11NioProtocol(173) : Starting ProtocolHandler ["http-nio-8080"]
+2020-02-21 03:35:20,601 INFO  o.s.b.web.embedded.tomcat.TomcatWebServer(204) : Tomcat started on port(s): 8080 (http) with context path ''
+2020-02-21 03:35:20,604 INFO  com.primeeme.restapi.RestapiauthApplication(61) : Started RestapiauthApplication in 6.828 seconds (JVM running for 7.392)
+2020-02-21 03:35:28,808 INFO  o.a.c.c.C.[Tomcat].[localhost].[/](173) : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-02-21 03:35:28,808 INFO  o.s.web.servlet.DispatcherServlet(525) : Initializing Servlet 'dispatcherServlet'
+2020-02-21 03:35:28,818 INFO  o.s.web.servlet.DispatcherServlet(547) : Completed initialization in 9 ms
+2020-02-21 03:43:26,069 INFO  o.s.s.concurrent.ThreadPoolTaskExecutor(208) : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-02-21 03:43:26,079 INFO  com.alibaba.druid.pool.DruidDataSource(1825) : {dataSource-1} closed
+2020-02-21 03:43:29,997 INFO  com.primeeme.restapi.RestapiauthApplication(55) : Starting RestapiauthApplication on xkongs-iMac.local with PID 21836 (/Users/xkong/Desktop/EME_Rest_API_auth/restapi/target/classes started by xkong in /Users/xkong/Desktop/EME_Rest_API_auth)
+2020-02-21 03:43:30,000 INFO  com.primeeme.restapi.RestapiauthApplication(655) : The following profiles are active: dev
+2020-02-21 03:43:30,054 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor(225) : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-02-21 03:43:30,054 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor(225) : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-02-21 03:43:31,441 INFO  o.s.b.web.embedded.tomcat.TomcatWebServer(92) : Tomcat initialized with port(s): 8080 (http)
+2020-02-21 03:43:31,455 INFO  org.apache.coyote.http11.Http11NioProtocol(173) : Initializing ProtocolHandler ["http-nio-8080"]
+2020-02-21 03:43:31,455 INFO  org.apache.catalina.core.StandardService(173) : Starting service [Tomcat]
+2020-02-21 03:43:31,455 INFO  org.apache.catalina.core.StandardEngine(173) : Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-02-21 03:43:31,530 INFO  o.a.c.c.C.[Tomcat].[localhost].[/](173) : Initializing Spring embedded WebApplicationContext
+2020-02-21 03:43:31,530 INFO  o.springframework.web.context.ContextLoader(284) : Root WebApplicationContext: initialization completed in 1476 ms
+2020-02-21 03:43:31,681 INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure(56) : Init DruidDataSource
+2020-02-21 03:43:35,203 INFO  com.alibaba.druid.pool.DruidDataSource(930) : {dataSource-1} inited
+2020-02-21 03:43:35,439 INFO  o.s.s.concurrent.ThreadPoolTaskExecutor(171) : Initializing ExecutorService 'applicationTaskExecutor'
+2020-02-21 03:43:35,578 INFO  o.s.b.d.a.OptionalLiveReloadServer(58) : LiveReload server is running on port 35729
+2020-02-21 03:43:35,608 INFO  org.apache.coyote.http11.Http11NioProtocol(173) : Starting ProtocolHandler ["http-nio-8080"]
+2020-02-21 03:43:35,692 INFO  o.s.b.web.embedded.tomcat.TomcatWebServer(204) : Tomcat started on port(s): 8080 (http) with context path ''
+2020-02-21 03:43:35,695 INFO  com.primeeme.restapi.RestapiauthApplication(61) : Started RestapiauthApplication in 6.413 seconds (JVM running for 6.963)
+2020-02-21 03:43:38,404 INFO  o.a.c.c.C.[Tomcat].[localhost].[/](173) : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-02-21 03:43:38,405 INFO  o.s.web.servlet.DispatcherServlet(525) : Initializing Servlet 'dispatcherServlet'
+2020-02-21 03:43:38,412 INFO  o.s.web.servlet.DispatcherServlet(547) : Completed initialization in 7 ms
+2020-02-21 03:45:05,686 INFO  o.s.s.concurrent.ThreadPoolTaskExecutor(208) : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-02-21 03:45:05,695 INFO  com.alibaba.druid.pool.DruidDataSource(1825) : {dataSource-1} closed
+2020-02-21 03:45:09,013 INFO  com.primeeme.restapi.RestapiauthApplication(55) : Starting RestapiauthApplication on xkongs-iMac.local with PID 21847 (/Users/xkong/Desktop/EME_Rest_API_auth/restapi/target/classes started by xkong in /Users/xkong/Desktop/EME_Rest_API_auth)
+2020-02-21 03:45:09,018 INFO  com.primeeme.restapi.RestapiauthApplication(655) : The following profiles are active: dev
+2020-02-21 03:45:09,066 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor(225) : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-02-21 03:45:09,068 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor(225) : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-02-21 03:45:10,272 INFO  o.s.b.web.embedded.tomcat.TomcatWebServer(92) : Tomcat initialized with port(s): 8080 (http)
+2020-02-21 03:45:10,282 INFO  org.apache.coyote.http11.Http11NioProtocol(173) : Initializing ProtocolHandler ["http-nio-8080"]
+2020-02-21 03:45:10,283 INFO  org.apache.catalina.core.StandardService(173) : Starting service [Tomcat]
+2020-02-21 03:45:10,283 INFO  org.apache.catalina.core.StandardEngine(173) : Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-02-21 03:45:10,341 INFO  o.a.c.c.C.[Tomcat].[localhost].[/](173) : Initializing Spring embedded WebApplicationContext
+2020-02-21 03:45:10,341 INFO  o.springframework.web.context.ContextLoader(284) : Root WebApplicationContext: initialization completed in 1273 ms
+2020-02-21 03:45:10,458 INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure(56) : Init DruidDataSource
+2020-02-21 03:45:12,809 INFO  com.alibaba.druid.pool.DruidDataSource(930) : {dataSource-1} inited
+2020-02-21 03:45:13,039 INFO  o.s.s.concurrent.ThreadPoolTaskExecutor(171) : Initializing ExecutorService 'applicationTaskExecutor'
+2020-02-21 03:45:13,164 INFO  o.s.b.d.a.OptionalLiveReloadServer(58) : LiveReload server is running on port 35729
+2020-02-21 03:45:13,212 INFO  org.apache.coyote.http11.Http11NioProtocol(173) : Starting ProtocolHandler ["http-nio-8080"]
+2020-02-21 03:45:13,254 INFO  o.s.b.web.embedded.tomcat.TomcatWebServer(204) : Tomcat started on port(s): 8080 (http) with context path ''
+2020-02-21 03:45:13,258 INFO  com.primeeme.restapi.RestapiauthApplication(61) : Started RestapiauthApplication in 4.838 seconds (JVM running for 5.341)
+2020-02-21 03:45:22,233 INFO  o.a.c.c.C.[Tomcat].[localhost].[/](173) : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-02-21 03:45:22,234 INFO  o.s.web.servlet.DispatcherServlet(525) : Initializing Servlet 'dispatcherServlet'
+2020-02-21 03:45:22,240 INFO  o.s.web.servlet.DispatcherServlet(547) : Completed initialization in 6 ms
+2020-02-21 03:47:17,373 INFO  o.s.s.concurrent.ThreadPoolTaskExecutor(208) : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-02-21 03:47:17,403 INFO  com.alibaba.druid.pool.DruidDataSource(1825) : {dataSource-1} closed
+2020-02-21 03:47:21,146 INFO  com.primeeme.restapi.RestapiauthApplication(55) : Starting RestapiauthApplication on xkongs-iMac.local with PID 21854 (/Users/xkong/Desktop/EME_Rest_API_auth/restapi/target/classes started by xkong in /Users/xkong/Desktop/EME_Rest_API_auth)
+2020-02-21 03:47:21,150 INFO  com.primeeme.restapi.RestapiauthApplication(655) : The following profiles are active: dev
+2020-02-21 03:47:21,208 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor(225) : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-02-21 03:47:21,208 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor(225) : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-02-21 03:47:22,536 INFO  o.s.b.web.embedded.tomcat.TomcatWebServer(92) : Tomcat initialized with port(s): 8080 (http)
+2020-02-21 03:47:22,545 INFO  org.apache.coyote.http11.Http11NioProtocol(173) : Initializing ProtocolHandler ["http-nio-8080"]
+2020-02-21 03:47:22,546 INFO  org.apache.catalina.core.StandardService(173) : Starting service [Tomcat]
+2020-02-21 03:47:22,546 INFO  org.apache.catalina.core.StandardEngine(173) : Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-02-21 03:47:22,607 INFO  o.a.c.c.C.[Tomcat].[localhost].[/](173) : Initializing Spring embedded WebApplicationContext
+2020-02-21 03:47:22,608 INFO  o.springframework.web.context.ContextLoader(284) : Root WebApplicationContext: initialization completed in 1399 ms
+2020-02-21 03:47:22,827 INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure(56) : Init DruidDataSource
+2020-02-21 03:47:25,416 INFO  com.alibaba.druid.pool.DruidDataSource(930) : {dataSource-1} inited
+2020-02-21 03:47:25,645 INFO  o.s.s.concurrent.ThreadPoolTaskExecutor(171) : Initializing ExecutorService 'applicationTaskExecutor'
+2020-02-21 03:47:25,778 INFO  o.s.b.d.a.OptionalLiveReloadServer(58) : LiveReload server is running on port 35729
+2020-02-21 03:47:25,808 INFO  org.apache.coyote.http11.Http11NioProtocol(173) : Starting ProtocolHandler ["http-nio-8080"]
+2020-02-21 03:47:25,849 INFO  o.s.b.web.embedded.tomcat.TomcatWebServer(204) : Tomcat started on port(s): 8080 (http) with context path ''
+2020-02-21 03:47:25,853 INFO  com.primeeme.restapi.RestapiauthApplication(61) : Started RestapiauthApplication in 5.293 seconds (JVM running for 5.804)
+2020-02-21 03:47:31,654 INFO  o.a.c.c.C.[Tomcat].[localhost].[/](173) : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-02-21 03:47:31,655 INFO  o.s.web.servlet.DispatcherServlet(525) : Initializing Servlet 'dispatcherServlet'
+2020-02-21 03:47:31,661 INFO  o.s.web.servlet.DispatcherServlet(547) : Completed initialization in 6 ms
+2020-02-21 03:50:20,436 INFO  o.s.s.concurrent.ThreadPoolTaskExecutor(208) : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-02-21 03:50:20,446 INFO  com.alibaba.druid.pool.DruidDataSource(1825) : {dataSource-1} closed
+2020-02-21 03:50:24,562 INFO  com.primeeme.restapi.RestapiauthApplication(55) : Starting RestapiauthApplication on xkongs-iMac.local with PID 21871 (/Users/xkong/Desktop/EME_Rest_API_auth/restapi/target/classes started by xkong in /Users/xkong/Desktop/EME_Rest_API_auth)
+2020-02-21 03:50:24,565 INFO  com.primeeme.restapi.RestapiauthApplication(655) : The following profiles are active: dev
+2020-02-21 03:50:24,629 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor(225) : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-02-21 03:50:24,630 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor(225) : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-02-21 03:50:25,990 INFO  o.s.b.web.embedded.tomcat.TomcatWebServer(92) : Tomcat initialized with port(s): 8080 (http)
+2020-02-21 03:50:26,001 INFO  org.apache.coyote.http11.Http11NioProtocol(173) : Initializing ProtocolHandler ["http-nio-8080"]
+2020-02-21 03:50:26,001 INFO  org.apache.catalina.core.StandardService(173) : Starting service [Tomcat]
+2020-02-21 03:50:26,001 INFO  org.apache.catalina.core.StandardEngine(173) : Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-02-21 03:50:26,059 INFO  o.a.c.c.C.[Tomcat].[localhost].[/](173) : Initializing Spring embedded WebApplicationContext
+2020-02-21 03:50:26,060 INFO  o.springframework.web.context.ContextLoader(284) : Root WebApplicationContext: initialization completed in 1429 ms
+2020-02-21 03:50:26,172 INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure(56) : Init DruidDataSource
+2020-02-21 03:50:28,682 INFO  com.alibaba.druid.pool.DruidDataSource(930) : {dataSource-1} inited
+2020-02-21 03:50:28,971 INFO  o.s.s.concurrent.ThreadPoolTaskExecutor(171) : Initializing ExecutorService 'applicationTaskExecutor'
+2020-02-21 03:50:29,170 INFO  o.s.b.d.a.OptionalLiveReloadServer(58) : LiveReload server is running on port 35729
+2020-02-21 03:50:29,208 INFO  org.apache.coyote.http11.Http11NioProtocol(173) : Starting ProtocolHandler ["http-nio-8080"]
+2020-02-21 03:50:29,255 INFO  o.s.b.web.embedded.tomcat.TomcatWebServer(204) : Tomcat started on port(s): 8080 (http) with context path ''
+2020-02-21 03:50:29,259 INFO  com.primeeme.restapi.RestapiauthApplication(61) : Started RestapiauthApplication in 5.352 seconds (JVM running for 5.883)
+2020-02-21 03:50:58,904 INFO  o.a.c.c.C.[Tomcat].[localhost].[/](173) : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-02-21 03:50:58,905 INFO  o.s.web.servlet.DispatcherServlet(525) : Initializing Servlet 'dispatcherServlet'
+2020-02-21 03:50:58,910 INFO  o.s.web.servlet.DispatcherServlet(547) : Completed initialization in 5 ms
+2020-02-21 03:50:58,975 WARN  o.s.h.c.j.MappingJackson2HttpMessageConverter(127) : Failed to evaluate Jackson deserialization for type [[simple type, class com.primeeme.restapi.model.bo.PatientWrapper]]: com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Invalid definition for property `contactId` (of type `com.primeeme.restapi.model.Patient`): Could not find creator property with name 'contactId' (known Creator properties: [ssn, address1, address2, city, state, postal, contactPhone])
+2020-02-21 03:50:58,979 WARN  o.s.h.c.j.MappingJackson2HttpMessageConverter(127) : Failed to evaluate Jackson deserialization for type [[simple type, class com.primeeme.restapi.model.bo.PatientWrapper]]: com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Invalid type definition for type `com.primeeme.restapi.model.Patient`: Argument #8 of constructor [constructor for com.primeeme.restapi.model.Patient, annotations: [null]] has no property name annotation; must have name when multiple-parameter constructor annotated as Creator
+2020-02-21 03:50:58,981 WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver(199) : Resolved [org.springframework.web.HttpMediaTypeNotSupportedException: Content type 'application/json;charset=UTF-8' not supported]
+2020-02-21 03:51:39,422 INFO  o.s.s.concurrent.ThreadPoolTaskExecutor(208) : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-02-21 03:51:39,435 INFO  com.alibaba.druid.pool.DruidDataSource(1825) : {dataSource-1} closed
+2020-02-21 03:51:43,193 INFO  com.primeeme.restapi.RestapiauthApplication(55) : Starting RestapiauthApplication on xkongs-iMac.local with PID 21881 (/Users/xkong/Desktop/EME_Rest_API_auth/restapi/target/classes started by xkong in /Users/xkong/Desktop/EME_Rest_API_auth)
+2020-02-21 03:51:43,196 INFO  com.primeeme.restapi.RestapiauthApplication(655) : The following profiles are active: dev
+2020-02-21 03:51:43,256 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor(225) : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-02-21 03:51:43,256 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor(225) : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-02-21 03:51:44,298 INFO  o.s.b.web.embedded.tomcat.TomcatWebServer(92) : Tomcat initialized with port(s): 8080 (http)
+2020-02-21 03:51:44,307 INFO  org.apache.coyote.http11.Http11NioProtocol(173) : Initializing ProtocolHandler ["http-nio-8080"]
+2020-02-21 03:51:44,307 INFO  org.apache.catalina.core.StandardService(173) : Starting service [Tomcat]
+2020-02-21 03:51:44,307 INFO  org.apache.catalina.core.StandardEngine(173) : Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-02-21 03:51:44,358 INFO  o.a.c.c.C.[Tomcat].[localhost].[/](173) : Initializing Spring embedded WebApplicationContext
+2020-02-21 03:51:44,358 INFO  o.springframework.web.context.ContextLoader(284) : Root WebApplicationContext: initialization completed in 1100 ms
+2020-02-21 03:51:44,471 INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure(56) : Init DruidDataSource
+2020-02-21 03:51:46,644 INFO  com.alibaba.druid.pool.DruidDataSource(930) : {dataSource-1} inited
+2020-02-21 03:51:46,863 INFO  o.s.s.concurrent.ThreadPoolTaskExecutor(171) : Initializing ExecutorService 'applicationTaskExecutor'
+2020-02-21 03:51:46,983 INFO  o.s.b.d.a.OptionalLiveReloadServer(58) : LiveReload server is running on port 35729
+2020-02-21 03:51:47,012 INFO  org.apache.coyote.http11.Http11NioProtocol(173) : Starting ProtocolHandler ["http-nio-8080"]
+2020-02-21 03:51:47,053 INFO  o.s.b.web.embedded.tomcat.TomcatWebServer(204) : Tomcat started on port(s): 8080 (http) with context path ''
+2020-02-21 03:51:47,056 INFO  com.primeeme.restapi.RestapiauthApplication(61) : Started RestapiauthApplication in 4.409 seconds (JVM running for 4.975)
+2020-02-21 03:51:50,166 INFO  o.a.c.c.C.[Tomcat].[localhost].[/](173) : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-02-21 03:51:50,167 INFO  o.s.web.servlet.DispatcherServlet(525) : Initializing Servlet 'dispatcherServlet'
+2020-02-21 03:51:50,174 INFO  o.s.web.servlet.DispatcherServlet(547) : Completed initialization in 7 ms
+2020-02-21 03:51:50,253 WARN  o.s.h.c.j.MappingJackson2HttpMessageConverter(127) : Failed to evaluate Jackson deserialization for type [[simple type, class com.primeeme.restapi.model.bo.PatientWrapper]]: com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Invalid definition for property `contactId` (of type `com.primeeme.restapi.model.Patient`): Could not find creator property with name 'contactId' (known Creator properties: [ssn, address1, address2, city, state, postal, contactPhone])
+2020-02-21 03:51:50,257 WARN  o.s.h.c.j.MappingJackson2HttpMessageConverter(127) : Failed to evaluate Jackson deserialization for type [[simple type, class com.primeeme.restapi.model.bo.PatientWrapper]]: com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Invalid type definition for type `com.primeeme.restapi.model.Patient`: Argument #8 of constructor [constructor for com.primeeme.restapi.model.Patient, annotations: [null]] has no property name annotation; must have name when multiple-parameter constructor annotated as Creator
+2020-02-21 03:51:50,259 WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver(199) : Resolved [org.springframework.web.HttpMediaTypeNotSupportedException: Content type 'application/json;charset=UTF-8' not supported]
+2020-02-21 03:53:32,495 INFO  o.s.s.concurrent.ThreadPoolTaskExecutor(208) : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-02-21 03:53:32,509 INFO  com.alibaba.druid.pool.DruidDataSource(1825) : {dataSource-1} closed
+2020-02-21 03:53:38,174 INFO  com.primeeme.restapi.RestapiauthApplication(55) : Starting RestapiauthApplication on xkongs-iMac.local with PID 21893 (/Users/xkong/Desktop/EME_Rest_API_auth/restapi/target/classes started by xkong in /Users/xkong/Desktop/EME_Rest_API_auth)
+2020-02-21 03:53:38,177 INFO  com.primeeme.restapi.RestapiauthApplication(655) : The following profiles are active: dev
+2020-02-21 03:53:38,237 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor(225) : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-02-21 03:53:38,237 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor(225) : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-02-21 03:53:39,346 INFO  o.s.b.web.embedded.tomcat.TomcatWebServer(92) : Tomcat initialized with port(s): 8080 (http)
+2020-02-21 03:53:39,356 INFO  org.apache.coyote.http11.Http11NioProtocol(173) : Initializing ProtocolHandler ["http-nio-8080"]
+2020-02-21 03:53:39,356 INFO  org.apache.catalina.core.StandardService(173) : Starting service [Tomcat]
+2020-02-21 03:53:39,357 INFO  org.apache.catalina.core.StandardEngine(173) : Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-02-21 03:53:39,412 INFO  o.a.c.c.C.[Tomcat].[localhost].[/](173) : Initializing Spring embedded WebApplicationContext
+2020-02-21 03:53:39,413 INFO  o.springframework.web.context.ContextLoader(284) : Root WebApplicationContext: initialization completed in 1175 ms
+2020-02-21 03:53:39,540 INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure(56) : Init DruidDataSource
+2020-02-21 03:53:41,821 INFO  com.alibaba.druid.pool.DruidDataSource(930) : {dataSource-1} inited
+2020-02-21 03:53:42,030 INFO  o.s.s.concurrent.ThreadPoolTaskExecutor(171) : Initializing ExecutorService 'applicationTaskExecutor'
+2020-02-21 03:53:42,158 INFO  o.s.b.d.a.OptionalLiveReloadServer(58) : LiveReload server is running on port 35729
+2020-02-21 03:53:42,184 INFO  org.apache.coyote.http11.Http11NioProtocol(173) : Starting ProtocolHandler ["http-nio-8080"]
+2020-02-21 03:53:42,226 INFO  o.s.b.web.embedded.tomcat.TomcatWebServer(204) : Tomcat started on port(s): 8080 (http) with context path ''
+2020-02-21 03:53:42,230 INFO  com.primeeme.restapi.RestapiauthApplication(61) : Started RestapiauthApplication in 4.707 seconds (JVM running for 5.258)
+2020-02-21 03:53:45,731 INFO  o.a.c.c.C.[Tomcat].[localhost].[/](173) : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-02-21 03:53:45,732 INFO  o.s.web.servlet.DispatcherServlet(525) : Initializing Servlet 'dispatcherServlet'
+2020-02-21 03:53:45,737 INFO  o.s.web.servlet.DispatcherServlet(547) : Completed initialization in 5 ms
+2020-02-21 03:58:50,625 INFO  o.s.s.concurrent.ThreadPoolTaskExecutor(208) : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-02-21 03:58:50,647 INFO  com.alibaba.druid.pool.DruidDataSource(1825) : {dataSource-1} closed
