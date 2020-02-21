@@ -9,6 +9,6 @@ import org.springframework.transaction.annotation.Transactional;
 @Transactional
 public interface ProjectCompanyJobMapper {
 
-  @Select("select ProjectCompanyJobID from [EME].[ProjectCompanyJob where jobNumber = #{jobNumber} limit 1")
+  @Select("select TOP(1) ProjectCompanyJobID from [EME].[ProjectCompanyJob] where jobNumber = #{jobNumber}")
   int selectIdByjobNumber(@Param("jobNumber") String jobNumber);
 }

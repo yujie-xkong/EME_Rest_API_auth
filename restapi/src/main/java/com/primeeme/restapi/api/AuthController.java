@@ -20,12 +20,15 @@ public class AuthController {
     return authorizationService.selectAuthById(id);
   }
 
-  @PostMapping(path = "/fcapi/data", consumes = "application/json", produces = "application/json")
+  @PostMapping(path = "/Authorization/v1/addAuthorization", consumes = "application/json", produces = "application/json")
   public String authorizationCreate(@RequestBody AuthCreateRequest authCreateRequest) {
     log.info("received mzEncryptRequest data {}", authCreateRequest.toString());
-
-
-
+    try {
+      authorizationService.createAuth(authCreateRequest);
+    } catch (Exception e) {
+      e.printStackTrace();
+      return "0";
+    }
     return "1";
   }
 }
