@@ -8,6 +8,7 @@ import com.primeeme.restapi.model.bo.AdditionalInfo;
 import com.primeeme.restapi.model.bo.AuthCreateRequest;
 import com.primeeme.restapi.model.bo.JobInfo;
 import com.primeeme.restapi.service.AuthorizationService;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -18,10 +19,17 @@ import java.util.List;
 import java.util.UUID;
 
 @Service
+@Slf4j
 public class AuthorizationServiceImpl implements AuthorizationService {
 
   @Autowired
   AuthorizationMapper authorizationMapper;
+
+  @Autowired
+  AuthorizationPatientMapper authorizationPatientMapper;
+
+  @Autowired
+  AuthorizationTestTypeMapper authorizationTestTypeMapper;
 
   @Autowired
   ProjectCompanyJobMapper projectCompanyJobMapper;
@@ -41,7 +49,7 @@ public class AuthorizationServiceImpl implements AuthorizationService {
   }
 
   @Override
-  public int createAuth(AuthCreateRequest authCreateRequest) {
+  public int createAuth(AuthCreateRequest authCreateRequest) throws Exception {
 
     JobInfo jobInfo = authCreateRequest.getJobInfo();
     AdditionalInfo additionalInfo = authCreateRequest.getAdditionalInfo();
@@ -52,17 +60,20 @@ public class AuthorizationServiceImpl implements AuthorizationService {
 
     Authorization authorization = Authorization.builder()
         .Created(Date.from(utc.toInstant()))
-        .AuthorizationCode(UUID.randomUUID())
+        .AuthorizationCode(UUID.randomUUID().toString())
         .ProjectCompanyJobID(projectCompanyJobMapper.selectIdByjobNumber(jobInfo.getJobNumber()))
         .TestReasonID(testReasonMapper.selectIdByName(jobInfo.getTestReason()))
+        .CreatedByUserAccountID(9)
         .build();
 
     if (additionalInfo != null) {
       authorization.setAuthorizationComment(additionalInfo.getPurchaseOrder());
     }
 
-
     //insert auth
+    authorizationMapper.addAuth(authorization);
+    log.info(""+authorization);
+
 
     List<String> patientIds = authCreateRequest.getEmployees().getPatientID();
     for (String id : patientIds) {
@@ -77,8 +88,11 @@ public class AuthorizationServiceImpl implements AuthorizationService {
           .StatusDate(Date.from(utc.toInstant()))
           .NotesClosed(false)
           .IsLocked(false)
+          .CreatedByUserAccountID(9)
           .build();
       // insert authpatient
+      authorizationPatientMapper.addAuthPatient(authorizationPatient);
+
     }
 
     List<Integer> testTypeIds = testTypeMapper.selectIdByNames(authCreateRequest.getServices());
@@ -88,8 +102,10 @@ public class AuthorizationServiceImpl implements AuthorizationService {
           .TestTypeID(id)
           .Active(true)
           .Created(Date.from(utc.toInstant()))
+          .CreatedByUserAccountID(9)
           .build();
       // insert authorizationTestType
+      authorizationTestTypeMapper.addAuthTestType(authorizationTestType);
     }
 
 

@@ -8,6 +8,6 @@ import org.springframework.transaction.annotation.Transactional;
 @Transactional
 public interface TestReasonMapper {
 
-  @Select("select TestReasonID from [EME].[TestReason] where TestReasonName = #{TestReasonName} limit 1")
+  @Select("select TOP(1) TestReasonID from [EME].[TestReason] where TestReasonName = #{TestReasonName} ")
   int selectIdByName (String TestReasonName);
 }

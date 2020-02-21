@@ -7,5 +7,5 @@ public interface AuthorizationService  {
 
   Authorization selectAuthById(int id) ;
 
-  int createAuth(AuthCreateRequest authCreateRequest);
+  int createAuth(AuthCreateRequest authCreateRequest) throws Exception;
 }

@@ -1,5 +1,6 @@
 package com.primeeme.restapi.mapper;
 
+import org.apache.ibatis.annotations.Param;
 import org.apache.ibatis.annotations.Select;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
@@ -19,5 +20,5 @@ public interface TestTypeMapper {
       "</script>"
       }
   )
-  List<Integer> selectIdByNames(List<String> testTypeNames);
+  List<Integer> selectIdByNames(@Param("testTypeNames") List<String> testTypeNames);
 }

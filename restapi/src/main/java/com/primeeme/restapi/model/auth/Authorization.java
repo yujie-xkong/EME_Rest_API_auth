@@ -18,8 +18,8 @@ public class Authorization {
 
   private int AuthorizationID;
   private int ProjectCompanyJobID ;
-  private int CreatedByUserAccountID ;
-  private UUID AuthorizationCode ;
+  private int CreatedByUserAccountID;
+  private String AuthorizationCode ;
   private Date Created ;
   private int TestReasonID ;
   private String AuthorizationComment;
