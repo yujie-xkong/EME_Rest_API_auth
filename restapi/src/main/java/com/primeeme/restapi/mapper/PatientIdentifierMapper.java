@@ -8,6 +8,8 @@ import org.apache.ibatis.annotations.Select;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.List;
+
 @Repository
 @Transactional
 public interface PatientIdentifierMapper {
@@ -18,4 +20,7 @@ public interface PatientIdentifierMapper {
     @Insert("insert into EME.PatientIdentifier (patientId, identifierTypeId, identifierValue, active)" +
              "VALUES (#{patientId}, #{identifierTypeId}, #{identifierValue}, '0');")
     int addPatientIdentifier(PatientIdentifier patientIdentifier);
+
+    @Select("select patientId, identifierTypeId, identifierValue, active from EME.PatientIdentifier where patientId = #{id}")
+    List<PatientIdentifier> getPatientIdentifierByPatientId(@Param("id") Integer id);
 }

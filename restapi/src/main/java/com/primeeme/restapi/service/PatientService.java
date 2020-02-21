@@ -4,4 +4,5 @@ import com.primeeme.restapi.model.Patient;
 
 public interface PatientService {
     Patient getPatientById(Integer id);
+    int addPatient(Patient patient);
 }

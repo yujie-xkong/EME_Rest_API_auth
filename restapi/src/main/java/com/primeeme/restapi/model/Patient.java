@@ -1,49 +1,78 @@
 package com.primeeme.restapi.model;
 
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.AllArgsConstructor;
 import lombok.Data;
-
-import java.sql.Timestamp;
-import java.text.ParseException;
-import java.util.List;
 
 @AllArgsConstructor
 @Data
 public class Patient {
-    private  Integer patientID;
-    private  Contact contact;
+    private  Integer patientId;
+    private  Integer contactId;
     private  String ssn;
-    private  Address address;
-    private  String ContactPhone;
-    private  List<PatientIdentifier> patientIdentifierList;
-    private  Integer active_status;
+    private  String address1;
+    private  String address2;
+    private  String city;
+    private  String state;
+    private  String postal;
+    private  String contactPhone;
+    private  boolean active_status = false;
 
-    public Patient(String ssn, String firstName, String middleName, String lastName,
-                   String suffix, String address1, String address2, String city, String state,
-                   Integer postal, String dateOfBirth, String contactPhone,
-                   List<PatientIdentifier> patientIdentifierList,
-                   Integer active_status, String gender) throws ParseException
-    {
-        Contact patientContact = new Contact(firstName, middleName, lastName,
-                                             suffix, gender, dateOfBirth);
+    public Patient(@JsonProperty("ssn") String ssn,
+                   @JsonProperty("address1") String address1,
+                   @JsonProperty("address2") String address2,
+                   @JsonProperty("city") String city,
+                   @JsonProperty("state") String state,
+                   @JsonProperty("postal") String postal,
+                   @JsonProperty("contactPhone") String contactPhone, boolean active) {
         this.ssn = ssn;
-        this.contact = new Contact(firstName, middleName, lastName, suffix, dateOfBirth, gender);
-        this.address = new Address(address1, address2, city, state, postal);
-        ContactPhone = contactPhone;
-        this.active_status = active_status;
-        this.patientIdentifierList = patientIdentifierList;
+        this.address1 = address1;
+        this.address2 = address2;
+        this.city = city;
+        this.state = state;
+        this.postal = postal;
+        this.contactPhone = contactPhone;
+        this.active_status = active;
     }
 
-    // For HTTP GET
-    public Patient(String ssn, String firstName, String middleName, String lastName, String suffix, String address1,
-                   String address2, String city, String state, String postal, Timestamp dateOfBirth, String gender,
-                   String contactPhone) throws ParseException {
-
+    //For HTTP GET
+    public Patient(@JsonProperty("ssn") String ssn,
+                   @JsonProperty("contactId") Integer contactId,
+                   @JsonProperty("address1") String address1,
+                   @JsonProperty("address2") String address2,
+                   @JsonProperty("city") String city,
+                   @JsonProperty("state") String state,
+                   @JsonProperty("postal") String postal,
+                   @JsonProperty("contactPhone") String contactPhone,
+                   boolean active){
         this.ssn = ssn;
-        this.contact = new Contact(firstName, middleName, lastName, suffix, gender,dateOfBirth);
-        int postal_int = Integer.parseInt(postal);
-        this.address = new Address(address1, address2, city, state, postal_int);
-        ContactPhone = contactPhone;
+        this.contactId = contactId;
+        this.address1 = address1;
+        this.address2 = address2;
+        this.city = city;
+        this.state = state;
+        this.postal = postal;
+        this.contactPhone = contactPhone;
+        this.active_status = active;
+    }
+
+    //For Wrapper
+    public Patient(@JsonProperty("ssn") String ssn,
+                   @JsonProperty("contactId") Integer contactId,
+                   @JsonProperty("address1") String address1,
+                   @JsonProperty("address2") String address2,
+                   @JsonProperty("city") String city,
+                   @JsonProperty("state") String state,
+                   @JsonProperty("postal") String postal,
+                   @JsonProperty("contactPhone") String contactPhone){
+        this.ssn = ssn;
+        this.contactId = contactId;
+        this.address1 = address1;
+        this.address2 = address2;
+        this.city = city;
+        this.state = state;
+        this.postal = postal;
+        this.contactPhone = contactPhone;
     }
 }

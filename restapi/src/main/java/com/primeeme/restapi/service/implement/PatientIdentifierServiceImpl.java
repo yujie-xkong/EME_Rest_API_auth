@@ -6,6 +6,8 @@ import com.primeeme.restapi.service.PatientIdentifierService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 public class PatientIdentifierServiceImpl implements PatientIdentifierService {
     @Autowired
@@ -18,5 +20,10 @@ public class PatientIdentifierServiceImpl implements PatientIdentifierService {
     public int addPatientIdentifier(PatientIdentifier patientIdentifier) {
         patientIdentifierMapper.addPatientIdentifier(patientIdentifier);
         return patientIdentifier.getPatientIdentifierId();
+    }
+
+    @Override
+    public List<PatientIdentifier> getPatientIdentifierByPatientId(Integer id) {
+        return patientIdentifierMapper.getPatientIdentifierByPatientId(id);
     }
 }

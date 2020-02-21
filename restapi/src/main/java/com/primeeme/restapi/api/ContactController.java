@@ -18,7 +18,7 @@ public class ContactController {
     public int addContact(@RequestBody Contact contact){
         contactService.addContact(contact);
         if (contact.getContactID() != null ){
-            return 1;
+            return contact.getContactID();
         }else {
             return 0;
         }

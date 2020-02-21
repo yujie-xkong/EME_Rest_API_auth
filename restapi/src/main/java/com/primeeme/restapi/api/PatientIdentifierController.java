@@ -5,6 +5,8 @@ import com.primeeme.restapi.service.PatientIdentifierService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 @RestController
 public class PatientIdentifierController {
     @Autowired
@@ -19,10 +21,14 @@ public class PatientIdentifierController {
     public int addPatientIdentifier(@RequestBody PatientIdentifier patientIdentifier){
         patientIdentifierService.addPatientIdentifier(patientIdentifier);
         if (patientIdentifier.getPatientIdentifierId() != null){
-            return 1;
+            return patientIdentifier.getPatientIdentifierId();
         }else {
             return 0;
         }
     }
 
+    @GetMapping("/PatientIdentifier/v1/getPatientIdentifierByPatientId")
+    public List<PatientIdentifier> getPatientIdentifierByPatientId(@RequestParam("patientId") Integer patientId){
+        return patientIdentifierService.getPatientIdentifierByPatientId(patientId);
+    }
 }
