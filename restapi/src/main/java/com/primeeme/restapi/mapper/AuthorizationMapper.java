@@ -12,8 +12,14 @@ import org.springframework.transaction.annotation.Transactional;
 @Transactional
 public interface AuthorizationMapper {
 
+/*
   @Select("select * from [EME].[AUTHORIZATION] where AuthorizationID = #{id};")
   Authorization selectAuthorizationById(@Param("id") int id);
+*/
+
+  @Select("select top(1) * from [EME].[AUTHORIZATION] ;")
+  Authorization selectAuthorizationById(@Param("id") int id);
+
 
   @Options(useGeneratedKeys = true, keyProperty = "AuthorizationID")
   @Insert("insert into [EME].[AUTHORIZATION] (ProjectCompanyJobID, CreatedByUserAccountID, AuthorizationCode, Created, TestReasonID, AuthorizationComment) values" +

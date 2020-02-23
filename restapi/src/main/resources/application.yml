@@ -54,6 +54,9 @@ spring: 
     username: pgseme-migration
     password: U7rosd1A*KXsnyddo7Uq
     url: jdbc:sqlserver://pgseme-migration.database.windows.net:1433;database=eme-migration;encrypt=true;trustServerCertificate=false;hostNameInCertificate=*.database.windows.net;loginTimeout=30;
+  redis:
+    host: 127.0.0.1
+    port: 6379
 
 ---
 spring: 

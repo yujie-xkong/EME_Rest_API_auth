@@ -10,6 +10,7 @@ import com.primeeme.restapi.model.bo.JobInfo;
 import com.primeeme.restapi.service.AuthorizationService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 
 import java.time.OffsetDateTime;
@@ -43,8 +44,10 @@ public class AuthorizationServiceImpl implements AuthorizationService {
   @Autowired
   TestTypeMapper testTypeMapper;
 
+  @Cacheable(cacheNames = "auth" ,key = "#root.methodName+'['+#id+']'")
   @Override
   public Authorization selectAuthById(int id) {
+    log.info("" + authorizationMapper.selectAuthorizationById(id));
     return authorizationMapper.selectAuthorizationById(id);
   }
 
