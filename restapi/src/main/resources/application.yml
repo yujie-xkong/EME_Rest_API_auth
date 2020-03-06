@@ -1,10 +1,12 @@
 server:
   port: 8080
   max-http-header-size: 100000
-  undertow:
-    io-threads: 4
+
+
 
 spring:
+  application:
+    name: auth-provider
   profiles:
     active: dev
   #数据库配置
@@ -46,6 +48,14 @@ mybatis:
 
 flyway:
   locations:classpath:/db
+
+eureka:
+  instance:
+    prefer-ip-address: false
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/ #where our registry server is located
+
 
 ---
 spring: 

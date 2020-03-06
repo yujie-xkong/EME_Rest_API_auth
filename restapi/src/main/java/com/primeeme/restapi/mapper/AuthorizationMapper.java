@@ -17,7 +17,7 @@ public interface AuthorizationMapper {
   Authorization selectAuthorizationById(@Param("id") int id);
 */
 
-  @Select("select top(1) * from [EME].[AUTHORIZATION] ;")
+  @Select("select * from [EME].[AUTHORIZATION] where AuthorizationID = #{id};")
   Authorization selectAuthorizationById(@Param("id") int id);
 
 

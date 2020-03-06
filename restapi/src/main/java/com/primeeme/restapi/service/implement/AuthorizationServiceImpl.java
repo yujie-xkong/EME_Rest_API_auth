@@ -1,5 +1,6 @@
 package com.primeeme.restapi.service.implement;
 
+import com.primeeme.restapi.exception.UnicomRuntimeException;
 import com.primeeme.restapi.mapper.*;
 import com.primeeme.restapi.model.auth.Authorization;
 import com.primeeme.restapi.model.auth.AuthorizationPatient;
@@ -46,8 +47,7 @@ public class AuthorizationServiceImpl implements AuthorizationService {
 
   @Cacheable(cacheNames = "auth" ,key = "#root.methodName+'['+#id+']'")
   @Override
-  public Authorization selectAuthById(int id) {
-    log.info("" + authorizationMapper.selectAuthorizationById(id));
+  public Authorization selectAuthById(int id) throws Exception  {
     return authorizationMapper.selectAuthorizationById(id);
   }
 
@@ -75,8 +75,6 @@ public class AuthorizationServiceImpl implements AuthorizationService {
 
     //insert auth
     authorizationMapper.addAuth(authorization);
-    log.info(""+authorization);
-
 
     List<String> patientIds = authCreateRequest.getEmployees().getPatientID();
     for (String id : patientIds) {
