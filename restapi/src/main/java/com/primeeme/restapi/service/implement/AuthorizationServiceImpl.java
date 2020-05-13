@@ -1,5 +1,6 @@
 package com.primeeme.restapi.service.implement;
 
+import com.primeeme.restapi.exception.UnicomRuntimeException;
 import com.primeeme.restapi.mapper.*;
 import com.primeeme.restapi.model.auth.Authorization;
 import com.primeeme.restapi.model.auth.AuthorizationPatient;
@@ -10,6 +11,7 @@ import com.primeeme.restapi.model.bo.JobInfo;
 import com.primeeme.restapi.service.AuthorizationService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 
 import java.time.OffsetDateTime;
@@ -43,8 +45,9 @@ public class AuthorizationServiceImpl implements AuthorizationService {
   @Autowired
   TestTypeMapper testTypeMapper;
 
+  @Cacheable(cacheNames = "auth" ,key = "#root.methodName+'['+#id+']'")
   @Override
-  public Authorization selectAuthById(int id) {
+  public Authorization selectAuthById(int id) throws Exception  {
     return authorizationMapper.selectAuthorizationById(id);
   }
 
@@ -72,8 +75,6 @@ public class AuthorizationServiceImpl implements AuthorizationService {
 
     //insert auth
     authorizationMapper.addAuth(authorization);
-    log.info(""+authorization);
-
 
     List<String> patientIds = authCreateRequest.getEmployees().getPatientID();
     for (String id : patientIds) {

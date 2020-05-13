@@ -1,0 +1,467 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Prime</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link href="../static/eme/css/eme.css" rel="stylesheet">
+    <style>.loading-ring{-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;position:fixed;width:100%;height:100%;background-color:rgba(51,51,51,.4);display:-webkit-box;display:-ms-flexbox;display:flex;top:0;left:0;z-index:10000}.chart{position:relative;display:inline-block;color:#999;font-size:20px;text-align:center;margin-top:-200px;margin-left:-200px}svg .outer{stroke:#2d346e}.chart svg{position:absolute;top:0;left:0}.outer{fill:transparent;stroke:#333;stroke-width:5;stroke-dasharray:534;-webkit-transition:stroke-dashoffset 1s;transition:stroke-dashoffset 1s;-webkit-animation-play-state:running;-moz-transform:rotate(-89deg) translateX(-190px)}.chart[data-percent='100'] .outer{stroke-dashoffset:0;-webkit-animation:2s show100;animation:2s show100}.chart[data-percent='0'] .outer{stroke-dashoffset:0;-webkit-animation:2s show0;animation:2s show0}@-webkit-keyframes show100{from{stroke-dashoffset:537}to{stroke-dashoffset:0}}@keyframes show100{from{stroke-dashoffset:537}to{stroke-dashoffset:0}}@-webkit-keyframes show0{from{stroke-dashoffset:0}to{stroke-dashoffset:537}}@keyframes show0{from{stroke-dashoffset:0}to{stroke-dashoffset:537}}</style>
+    <style>.header-icon[_ngcontent-c1]{padding:0 14px}.header-spacer[_ngcontent-c1]{-webkit-box-flex:1;-ms-flex:1 1 auto;flex:1 1 auto}.header[_ngcontent-c1]{position:fixed;top:0;z-index:1000}.message-text[_ngcontent-c1]{font-size:14px}</style>
+    <style>.modalShow[_ngcontent-c3]{display:block}.modalHide[_ngcontent-c3]{display:none}.backdrop[_ngcontent-c3]{background-color:rgba(51,51,51,.4)}</style>
+    <style></style>
+    <style>.training-video-modal[_ngcontent-c7]{width:55%;z-index:1000}</style>
+    <style>.training-video-modal[_ngcontent-c8]{width:55%;z-index:1000}</style>
+    <style>.training-video-modal[_ngcontent-c9]{width:55%;z-index:1000}</style>
+    <style>.training-video-modal[_ngcontent-c10]{width:55%;z-index:1000}</style>
+    <style>.training-video-modal[_ngcontent-c11]{width:55%;z-index:1000}</style>
+    <style>.training-video-modal[_ngcontent-c12]{width:55%;z-index:1000}</style>
+    <style>.training-video-modal[_ngcontent-c13]{width:55%;z-index:1000}</style>
+    <style>.message-containers[_ngcontent-c6]   .alert[_ngcontent-c6]{margin-bottom:0;-webkit-transition:all .35s ease;transition:all .35s ease}.message-containers[_ngcontent-c6]   .message-container[_ngcontent-c6]{padding-left:0;padding-right:0}</style>
+    <style>.header-button-container[_ngcontent-c15]   div[_ngcontent-c15]{display:inline-block;margin-right:10px}.fix-span[_ngcontent-c15]{width:auto}.button-container[_ngcontent-c15]   div[_ngcontent-c15]{display:inline-block;margin-right:5px}.table[_ngcontent-c15]   td.fit[_ngcontent-c15], .table[_ngcontent-c15]   th.fit[_ngcontent-c15]{white-space:nowrap;width:1%}.row-highlight[_ngcontent-c15], .row-highlight[_ngcontent-c15]   [_ngcontent-c15]:hover, .row-highlight[_ngcontent-c15]   td[_ngcontent-c15]{background-color:#b6d7a8}.row-highlight-yellow[_ngcontent-c15], .row-highlight-yellow[_ngcontent-c15]   [_ngcontent-c15]:hover, .row-highlight-yellow[_ngcontent-c15]   td[_ngcontent-c15]{background-color:#fffc84}.row-highlight-red[_ngcontent-c15], .row-highlight-red[_ngcontent-c15]   [_ngcontent-c15]:hover, .row-highlight-red[_ngcontent-c15]   td[_ngcontent-c15]{background-color:#ff8484}.table-striped[_ngcontent-c15]   thead[_ngcontent-c15]   tr[_ngcontent-c15]:nth-of-type(odd){background-color:#f3f3f3!important}.table-striped[_ngcontent-c15]   thead[_ngcontent-c15]   tr[_ngcontent-c15]:nth-of-type(even){background-color:#fff!important}.table-striped[_ngcontent-c15]   tbody[_ngcontent-c15]   tr[_ngcontent-c15]:nth-of-type(odd){background-color:#f3f3f3!important}.table-striped[_ngcontent-c15]   tbody[_ngcontent-c15]   tr[_ngcontent-c15]:nth-of-type(even){background-color:#fff!important}</style>
+    <style>li[_ngcontent-c17]{cursor:pointer;min-width:54px;width:54px}.pagination[_ngcontent-c17]{margin-top:12px;margin-bottom:12px}.pagination[_ngcontent-c17]   a.disabled[_ngcontent-c17]{color:gray;cursor:not-allowed;text-decoration:none}.pager-container[_ngcontent-c17]{margin-left:12px;margin-top:12px}</style>
+      <script src="https://kit.fontawesome.com/51dfe55888.js" crossorigin="anonymous"></script>
+  </head>
+
+<body class="UAT"><app-root ng-version="5.2.5"><header _nghost-c1="">
+    <div _ngcontent-c1="" class="navbar navbar-inverse navbar-fixed-top">
+    <div _ngcontent-c1="" class="container">
+    <div _ngcontent-c1="" class="navbar-header">
+      <button _ngcontent-c1="" class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse" type="button">
+        <span _ngcontent-c1="" class="icon-bar"></span>
+        <span _ngcontent-c1="" class="icon-bar"></span>
+        <span _ngcontent-c1="" class="icon-bar"></span>
+      </button>
+      <a _ngcontent-c1="" class="navbar-brand">
+        <img _ngcontent-c1="" src="../static/eme/assets/images/prime_transparent_logo.png">
+      </a>
+    </div>
+    <div _ngcontent-c1="" class="navbar-collapse collapse">
+      <ul _ngcontent-c1="" class="nav navbar-nav navbar-left">
+        <!----><li _ngcontent-c1="" class="dropdown">
+          <a _ngcontent-c1="" aria-expanded="false" class="dropdown-toggle" data-toggle="dropdown" href="#" role="button">
+            <i _ngcontent-c1="" class="fa fa-2x fa-dashboard"></i>
+            <span _ngcontent-c1="" class="nav-link">Dashboard</span>
+            <span _ngcontent-c1="" class="caret"></span>
+          </a>
+          <ul _ngcontent-c1="" class="dropdown-menu nav-dropdown-menu" role="menu">
+            <!---->
+            <!----><li _ngcontent-c1="" class="dropdown-item nav-dropdown-item">
+              <a _ngcontent-c1="">
+                <i _ngcontent-c1="" class="fa fa-dashboard" style="color: #fff"></i> <span _ngcontent-c1="" class="nav-link">Check In Dashboard</span>
+              </a>
+            </li>
+            <!----><li _ngcontent-c1="" class="dropdown-item nav-dropdown-item">
+              <a _ngcontent-c1="">
+                <i _ngcontent-c1="" class="fa fa-dashboard" style="color: #fff"></i> <span _ngcontent-c1="" class="nav-link">Check Out Dashboard</span>
+              </a>
+            </li>
+            <!----><li _ngcontent-c1="" class="dropdown-item nav-dropdown-item">
+              <a _ngcontent-c1="">
+                <i _ngcontent-c1="" class="fa fa-dashboard" style="color: #fff"></i> <span _ngcontent-c1="" class="nav-link">Technician Dashboard</span>
+              </a>
+            </li>
+            <!----><li _ngcontent-c1="" class="dropdown-item nav-dropdown-item">
+              <a _ngcontent-c1="">
+                <i _ngcontent-c1="" class="fa fa-dashboard" style="color: #fff"></i> <span _ngcontent-c1="" class="nav-link">Provider Dashboard</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <!----><li _ngcontent-c1="">
+          <a _ngcontent-c1="" href="/eme/new-authorization">
+            <i _ngcontent-c1="" class="fa fa-2x fa-drivers-license" style="color: #fff"></i> <span _ngcontent-c1="" class="nav-link">New Authorization</span>
+          </a>
+        </li>
+        <!----><li _ngcontent-c1="" class="dropdown">
+          <a _ngcontent-c1="" aria-expanded="false" class="dropdown-toggle" data-toggle="dropdown" href="#" role="button">
+            <i _ngcontent-c1="" class="fa fa-2x fa-cog"></i>
+            <span _ngcontent-c1="" class="nav-link">Administration</span>
+            <span _ngcontent-c1="" class="caret"></span>
+          </a>
+          <ul _ngcontent-c1="" class="dropdown-menu nav-dropdown-menu" role="menu">
+            <!---->
+            <!----><li _ngcontent-c1="" class="dropdown-item nav-dropdown-item">
+              <a _ngcontent-c1="" routerlink="/employer-list" href="#/employer-list">
+                <span _ngcontent-c1="" class="nav-link"><i _ngcontent-c1="" class="fa fa-industry fa-fw"></i> Employer</span>
+              </a>
+            </li>
+            <!---->
+            <!---->
+            <!----><li _ngcontent-c1="" class="dropdown-item nav-dropdown-item">
+              <a _ngcontent-c1="" routerlink="/user-list" href="#/user-list">
+                <span _ngcontent-c1="" class="nav-link"><i _ngcontent-c1="" class="fa fa-users fa-fw"></i> Users</span>
+              </a>
+            </li>
+            <!----><li _ngcontent-c1="" class="dropdown-item nav-dropdown-item">
+              <a _ngcontent-c1="">
+                <span _ngcontent-c1="" class="nav-link"><i _ngcontent-c1="" class="fa fa-object-group fa-fw"></i> Billing Group</span>
+              </a>
+            </li>
+            <!---->
+          </ul>
+        </li>
+        <!---->
+      </ul>
+      <!----><ul _ngcontent-c1="" class="nav navbar-nav navbar-right">
+        <li _ngcontent-c1="" class="dropdown">
+          <a _ngcontent-c1="" aria-expanded="false" class="dropdown-toggle" data-toggle="dropdown" href="#" role="button">
+            <i _ngcontent-c1="" class="fa fa-2x fa-cogs"></i>
+            <span _ngcontent-c1="" class="nav-link">test_checkin@prim</span>
+            <span _ngcontent-c1="" class="caret"></span>
+          </a>
+          <ul _ngcontent-c1="" class="dropdown-menu nav-dropdown-menu" role="menu">
+            <li _ngcontent-c1="" class="dropdown-item nav-dropdown-item">
+              <a _ngcontent-c1="">
+                <span _ngcontent-c1="" class="nav-link"><i _ngcontent-c1="" class="fa fa-user-secret"></i> Manage My Profile</span>
+              </a>
+            </li>
+            <li _ngcontent-c1="" class="dropdown-item nav-dropdown-item">
+              <a _ngcontent-c1="">
+                <span _ngcontent-c1="" class="nav-link"><i _ngcontent-c1="" class="fa fa-globe"></i> Manage My Location</span>
+              </a>
+            </li>
+            <li _ngcontent-c1="" class="dropdown-item nav-dropdown-item">
+              <a _ngcontent-c1="">
+                <span _ngcontent-c1="" class="nav-link"><i _ngcontent-c1="" class="fa fa-key"></i> Change My Password</span>
+              </a>
+            </li>
+            <li _ngcontent-c1="" class="dropdown-item nav-dropdown-item">
+              <a _ngcontent-c1="">
+                <span _ngcontent-c1="" class="nav-link"><i _ngcontent-c1="" class="fa fa-lock"></i> Log off</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <!---->
+    </div>
+  </div>
+  <validation-results _ngcontent-c1="" _nghost-c6=""><div _ngcontent-c6="" class="message-containers" id="inner-validation-results">
+  </validation-results>
+</div>
+</header>
+<div class="container body-content" style="width:1320px;">
+  <!----><div>
+    <router-outlet></router-outlet><authorization-patient-list-for-provider _nghost-c14=""><div _ngcontent-c14="" class="row">
+  <div _ngcontent-c14="" class="col-md-10">
+    <h2 _ngcontent-c14="">Search Authorizations</h2>
+  </div>
+  <div _ngcontent-c14="" class="col-md-2 text-right">
+  </div>
+</div>
+
+<!-----xkong---->
+<div _ngcontent-c14="" class="row">
+  <div _ngcontent-c14="" class="col-md-12">
+    <div _ngcontent-c14="" class="row section-header form-inline">
+      <div _ngcontent-c14="" class="col-md-9">
+        <h4 _ngcontent-c14="">Filter by Status</h4>
+      </div>
+      <div _ngcontent-c14="" class="col-md-2">
+        <input _ngcontent-c14="" class="form-control ng-untouched ng-pristine ng-valid" name="statusFilterListCheckAll" type="checkbox" onchange="checkStatus(this)"> 
+        Select All Statuses
+      </div>
+      <div _ngcontent-c14="" class="col-md-1 section-arrows">
+        <button _ngcontent-c14="" class="btn btn-primary" id = "status-expand">
+          <!---->
+          <!----><i _ngcontent-c14="" class="fa fa-angle-up fa-2x"></i>
+        </button>
+      </div>
+    </div>
+    <div _ngcontent-c14="" class="row section-body" id = "status-filters">
+      <div _ngcontent-c14="" class="col-md-1"></div>
+      <div _ngcontent-c14="" class="col-md-10">
+        <div _ngcontent-c14="" class="row">
+          <!----><div _ngcontent-c14="" class="col-md-4">
+            <div _ngcontent-c14="" class="row form-inline">
+              <div _ngcontent-c14="" class="col-md-12">
+                <input _ngcontent-c14="" class="form-control ng-untouched ng-pristine ng-valid" type="checkbox" onchange="checkStatus(this)">
+                <span _ngcontent-c14="">Pending Tests</span>
+              </div>
+            </div>
+          </div><div _ngcontent-c14="" class="col-md-4">
+            <div _ngcontent-c14="" class="row form-inline">
+              <div _ngcontent-c14="" class="col-md-12">
+                <input _ngcontent-c14="" class="form-control ng-untouched ng-pristine ng-valid" type="checkbox" onchange="checkStatus(this)">
+                <span _ngcontent-c14="">Clinic - In Progress</span>
+              </div>
+            </div>
+          </div><div _ngcontent-c14="" class="col-md-4">
+            <div _ngcontent-c14="" class="row form-inline">
+              <div _ngcontent-c14="" class="col-md-12">
+                <input _ngcontent-c14="" class="form-control ng-untouched ng-pristine ng-valid" type="checkbox" onchange="checkStatus(this)">
+                <span _ngcontent-c14="">Clinic - Results Pending</span>
+              </div>
+            </div>
+          </div><div _ngcontent-c14="" class="col-md-4">
+            <div _ngcontent-c14="" class="row form-inline">
+              <div _ngcontent-c14="" class="col-md-12">
+                <input _ngcontent-c14="" class="form-control ng-untouched ng-pristine ng-valid" type="checkbox" onchange="checkStatus(this)">
+                <span _ngcontent-c14="">Clinic - Waiting Further Action</span>
+              </div>
+            </div>
+          </div><div _ngcontent-c14="" class="col-md-4">
+            <div _ngcontent-c14="" class="row form-inline">
+              <div _ngcontent-c14="" class="col-md-12">
+                <input _ngcontent-c14="" class="form-control ng-untouched ng-pristine ng-valid" type="checkbox" onchange="checkStatus(this)">
+                <span _ngcontent-c14="">Reviewer - Pending</span>
+              </div>
+            </div>
+          </div><div _ngcontent-c14="" class="col-md-4">
+            <div _ngcontent-c14="" class="row form-inline">
+              <div _ngcontent-c14="" class="col-md-12">
+                <input _ngcontent-c14="" class="form-control ng-untouched ng-pristine ng-valid" type="checkbox" onchange="checkStatus(this)">
+                <span _ngcontent-c14="">Reviewer - In Review</span>
+              </div>
+            </div>
+          </div><div _ngcontent-c14="" class="col-md-4">
+            <div _ngcontent-c14="" class="row form-inline">
+              <div _ngcontent-c14="" class="col-md-12">
+                <input _ngcontent-c14="" class="form-control ng-untouched ng-pristine ng-valid" type="checkbox" onchange="checkStatus(this)">
+                <span _ngcontent-c14="">Reviewer - Waiting Further Information</span>
+              </div>
+            </div>
+          </div><div _ngcontent-c14="" class="col-md-4">
+            <div _ngcontent-c14="" class="row form-inline">
+              <div _ngcontent-c14="" class="col-md-12">
+                <input _ngcontent-c14="" class="form-control ng-untouched ng-pristine ng-valid" type="checkbox" onchange="checkStatus(this)">
+                <span _ngcontent-c14="">Reviewer - Returned to Clinic</span>
+              </div>
+            </div>
+          </div><div _ngcontent-c14="" class="col-md-4">
+            <div _ngcontent-c14="" class="row form-inline">
+              <div _ngcontent-c14="" class="col-md-12">
+                <input _ngcontent-c14="" class="form-control ng-untouched ng-pristine ng-valid" type="checkbox" onchange="checkStatus(this)">
+                <span _ngcontent-c14="">Cleared</span>
+              </div>
+            </div>
+          </div><div _ngcontent-c14="" class="col-md-4">
+            <div _ngcontent-c14="" class="row form-inline">
+              <div _ngcontent-c14="" class="col-md-12">
+                <input _ngcontent-c14="" class="form-control ng-untouched ng-pristine ng-valid" type="checkbox" onchange="checkStatus(this)">
+                <span _ngcontent-c14="">Cleared with Restrictions</span>
+              </div>
+            </div>
+          </div><div _ngcontent-c14="" class="col-md-4">
+            <div _ngcontent-c14="" class="row form-inline">
+              <div _ngcontent-c14="" class="col-md-12">
+                <input _ngcontent-c14="" class="form-control ng-untouched ng-pristine ng-valid" type="checkbox" onchange="checkStatus(this)">
+                <span _ngcontent-c14="">Not Cleared</span>
+              </div>
+            </div>
+          </div><div _ngcontent-c14="" class="col-md-4">
+            <div _ngcontent-c14="" class="row form-inline">
+              <div _ngcontent-c14="" class="col-md-12">
+                <input _ngcontent-c14="" class="form-control ng-untouched ng-pristine ng-valid" type="checkbox" onchange="checkStatus(this)">
+                <span _ngcontent-c14="">Further Testing Cancelled</span>
+              </div>
+            </div>
+          </div><div _ngcontent-c14="" class="col-md-4">
+            <div _ngcontent-c14="" class="row form-inline">
+              <div _ngcontent-c14="" class="col-md-12">
+                <input _ngcontent-c14="" class="form-control ng-untouched ng-pristine ng-valid" type="checkbox" onchange="checkStatus(this)">
+                <span _ngcontent-c14="">Medically Not Cleared</span>
+              </div>
+            </div>
+          </div><div _ngcontent-c14="" class="col-md-4">
+            <div _ngcontent-c14="" class="row form-inline">
+              <div _ngcontent-c14="" class="col-md-12">
+                <input _ngcontent-c14="" class="form-control ng-untouched ng-pristine ng-valid" type="checkbox" onchange="checkStatus(this)">
+                <span _ngcontent-c14="">Sent To Clinic For Further Evaluation</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div _ngcontent-c14="" class="col-md-1"></div>
+    </div>
+
+    <!-----xkong----->
+    <div _ngcontent-c14="" class="row section-space">
+      <div _ngcontent-c14="" class="col-md-12">
+        &nbsp;
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<hr _ngcontent-c14="" class="divider">
+<search-grid _ngcontent-c14="" _nghost-c15="" title="Search Authorizations"><div _ngcontent-c15="" class="row">
+  <div _ngcontent-c15="" class="col-md-3">
+  <!------xkong------->
+    <form _ngcontent-c15="" name="searchForm" novalidate="" class="ng-untouched ng-pristine ng-valid">
+      <div _ngcontent-c15="" class="form-group">
+        <div _ngcontent-c15="" class="input-group">
+          <input _ngcontent-c15="" aria-describedby="Search" class="form-control ng-untouched ng-pristine ng-valid" id="search" name="search" placeholder="Search">
+          <span _ngcontent-c15="" class="input-group-btn">
+            <button _ngcontent-c15="" class="btn btn-success" type="submit" id = "submit"><i _ngcontent-c15="" aria-hidden="true" class="fa fa-search"></i></button>
+          </span>
+        </div>
+      </div>
+    </form>
+  </div>
+  <div _ngcontent-c15="" class="col-md-7 header-button-container">
+  </div>
+</div>
+<div _ngcontent-c15="" class="panel panel-default-dark">
+
+  <div _ngcontent-c15="" class="">
+
+
+
+    <!-- xkong Table -->
+    <table _ngcontent-c15="" class="table table-bordered table-condensed table-striped table-hover" id="Dashboard_table">
+        <thead _ngcontent-c15=""><tr _ngcontent-c15="">
+            <th _ngcontent-c15="" class="">
+                <a _ngcontent-c15="">Last Name
+                <span _ngcontent-c15="" hidden="">
+                    <i _ngcontent-c15="" aria-hidden="true" class="fa fa-angle-down"></i>
+                    <i _ngcontent-c15="" aria-hidden="true" class="fa fa-angle-up"></i>
+                </span></a></th>
+            <th _ngcontent-c15="" class="">
+                <a _ngcontent-c15="">First Name
+                <span _ngcontent-c15="" hidden="">
+                    <i _ngcontent-c15="" aria-hidden="true" class="fa fa-angle-down"></i>
+                    <i _ngcontent-c15="" aria-hidden="true" class="fa fa-angle-up"></i>
+                </span></a></th>        
+            <th _ngcontent-c15="" class="">
+                <a _ngcontent-c15="">DOB
+                <span _ngcontent-c15="" hidden="">
+                    <i _ngcontent-c15="" aria-hidden="true" class="fa fa-angle-down"></i>
+                    <i _ngcontent-c15="" aria-hidden="true" class="fa fa-angle-up"></i>
+                </span></a></th>
+            <th _ngcontent-c15="" class="">
+                <a _ngcontent-c15="">Job Number
+                <span _ngcontent-c15="" hidden="">
+                    <i _ngcontent-c15="" aria-hidden="true" class="fa fa-angle-down"></i>
+                    <i _ngcontent-c15="" aria-hidden="true" class="fa fa-angle-up"></i>
+                </span></a></th>
+            <th _ngcontent-c15="" class="">
+                <a _ngcontent-c15="">Reason
+                <span _ngcontent-c15="" hidden="">
+                    <i _ngcontent-c15="" aria-hidden="true" class="fa fa-angle-down"></i>
+                    <i _ngcontent-c15="" aria-hidden="true" class="fa fa-angle-up"></i>
+                </span></a></th>
+            <th _ngcontent-c15="" class="">
+                <a _ngcontent-c15="">Company
+                <span _ngcontent-c15="" hidden="">
+                    <i _ngcontent-c15="" aria-hidden="true" class="fa fa-angle-down"></i>
+                    <i _ngcontent-c15="" aria-hidden="true" class="fa fa-angle-up"></i>
+                </span></a></th>
+            <th _ngcontent-c15="" class="">
+                <a _ngcontent-c15="">Status
+                <span _ngcontent-c15="" hidden="">
+                    <i _ngcontent-c15="" aria-hidden="true" class="fa fa-angle-down"></i>
+                    <i _ngcontent-c15="" aria-hidden="true" class="fa fa-angle-up"></i>
+                </span></a></th>
+            <th _ngcontent-c15="" class="">
+                <a _ngcontent-c15="">Last Update
+                <span _ngcontent-c15="" hidden="">
+                    <i _ngcontent-c15="" aria-hidden="true" class="fa fa-angle-down"></i>
+                    <i _ngcontent-c15="" aria-hidden="true" class="fa fa-angle-up"></i>
+                </span></a></th>
+        </tr></theade>
+    </table>
+
+
+
+  </div>
+</div>
+</search-grid>
+</authorization-patient-list-for-provider>
+  </div>
+  <!---->
+  <really-click-modal _nghost-c3=""><div _ngcontent-c3="" role="dialog" tabindex="-1" class="modal fade modalHide ">
+  <div _ngcontent-c3="" class="modal-dialog" role="document">
+    <div _ngcontent-c3="" class="modal-content">
+      <div _ngcontent-c3="" class="modal-body">
+        <p _ngcontent-c3=""></p>
+      </div>
+      <!----><div _ngcontent-c3="" class="modal-footer">
+        <button _ngcontent-c3="" class="btn btn-raised btn-success" type="button">Yes</button>
+        <button _ngcontent-c3="" class="btn btn-raised btn-warning" type="button">Cancel</button>
+      </div>
+      <!---->
+    </div>
+  </div>
+</div>
+</really-click-modal>
+</div>
+<footer id="footer" _nghost-c4=""><div _ngcontent-c4="" id="footer">
+</footer>
+
+</app-root>
+  <script type="text/javascript" src="../static/eme/scripts/inline.bundle.js"></script>
+  <script type="text/javascript" src="../static/eme/scripts/polyfills.bundle.js"></script>
+  <script type="text/javascript" src="../static/eme/scripts/scripts.bundle.js"></script>
+  <script type="text/javascript" src="../static/eme/scripts/auth_api_db_get.js"></script>
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script>
+      var statuses = '';
+      var searchText = $('#search').val()
+
+     function checkStatus(obj) {
+       statuses = '';
+       $.each($('input:checkbox'),function(){
+                if(this.checked){
+                    if (statuses.length == 0) {
+                       statuses = $(this).next().text()
+                    } else {
+                    statuses = $(this).next().text() + '%2B' + statuses
+                   }
+                }
+            });
+     
+       statuses = statuses.replace(/ /g,'%20');
+       searchText = $('#search').val();
+       var api_response = get_contact(2,statuses, searchText);
+     }
+
+     $('#submit').click(function () {
+         statuses = '';
+         $.each($('input:checkbox'),function(){
+             if(this.checked){
+                 if (statuses.length == 0) {
+                     statuses = $(this).next().text()
+                 } else {
+                     statuses = $(this).next().text() + '%2B' + statuses
+                 }
+             }
+         });
+
+         statuses = statuses.replace(/ /g,'%20');
+         searchText = $('#search').val();
+         console.info("search " + searchText)
+         var api_response = get_contact(2,statuses, searchText);
+     })
+
+
+     $.each($('input:checkbox'),function(){
+                if(this.checked){
+                    if (statuses.length == 0) {
+                       statuses = $(this).next().text()
+                    } else {
+                    statuses = $(this).next().text() + '%2B' + statuses
+                   }
+                }
+            });
+
+     statuses = statuses.replace(/ /g,'%20');
+     var api_response = get_contact(2,statuses,"");
+
+
+     $("#status-expand").click(function() {
+         if($("#status-filters").css("display") == 'block')
+            $("#status-filters").hide()
+         else
+             $("#status-filters").show()
+     });
+
+
+
+
+ </script>
+ <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+ <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+</body></html>

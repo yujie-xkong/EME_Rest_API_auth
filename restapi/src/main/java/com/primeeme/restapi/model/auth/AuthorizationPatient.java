@@ -37,7 +37,6 @@ public class AuthorizationPatient {
   private String ReviewerFinalComment;
   private String ReasonIsNotBillable;
 
-
   private boolean IsLocked;
   private int LockedByUserAccountID;
   private DateTimeOffset LockedTime;

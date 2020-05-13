@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+        layout:decorate="~{layouts/index_default}">
+<head>
+</head>
+<body>
+<div class="container-fluid h-100" layout:fragment="content">
+    <div class="row h-100">
+        <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+            <header class="mb-auto">
+            </header>
+            <div>
+                <img class="rounded mx-auto d-block" src="../static/images/logo.svg" th:src="@{/images/logo.svg}"
+                     alt="TiMaven" width="288" height="288">
+                <p class="lead"><b>Timaven</b> is an Expert in Time and Attendance Software.
+                    We help organizations meet their complex timekeeping, employee scheduling and other workforce needs.
+                </p>
+            </div>
+            <footer class="mt-auto">
+            </footer>
+        </div>
+    </div>
+</div>
+</body>
+</html>

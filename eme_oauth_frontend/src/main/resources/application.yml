@@ -1,0 +1,23 @@
+my-client:
+  client:
+    clientId: dashboard_client
+    clientSecret: a16dad81bf4795dd741669ec15815b919c47563a
+    accessTokenUri: http://aed208234a814416cb6f2512ebdbd1f0-1910457352.us-east-2.elb.amazonaws.com:8081/token
+    userAuthorizationUri: http://aed208234a814416cb6f2512ebdbd1f0-1910457352.us-east-2.elb.amazonaws.com:8081/oauth/authorize
+  resource:
+    userInfoUri: http://aed208234a814416cb6f2512ebdbd1f0-1910457352.us-east-2.elb.amazonaws.com:8081/me
+
+spring:
+  # thymeleaf配置
+     thymeleaf:
+      prefix: classpath:/templates/
+      check-template-location: true
+      suffix: .html
+      encoding: UTF-8
+      mode: HTML5
+
+     mvc:
+      view:
+        prefix: /templates/
+        suffix: .html
+      static-path-pattern: /static/**
