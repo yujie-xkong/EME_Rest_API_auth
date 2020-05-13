@@ -1,0 +1,56 @@
+function get_contact(id, statuses){
+  if (statuses.length == 0)
+     statuses = 'ALL'
+  var xhr = new XMLHttpRequest();
+  console.log(statuses);
+  xhr.open("GET", 
+           "http://18.220.100.7:8887/Authorization/v1/getAuthDashboard?searchText=&companyName=ALL&jobNumber=ALL&testReason=ALL&statusContext=" + statuses, 
+           true);
+  xhr.onload = function () {
+    if (this.readyState == 4 && this.status == 200) {
+        var response_json = JSON.parse(xhr.responseText);
+        // add error handling TBD 
+        if (response_json.status == "200"){
+            createTable(response_json.value)
+        }  
+    }
+  };
+  xhr.send();
+}
+
+function createTable(tableData){
+  var DB_table = document.getElementById("Dashboard_table");
+  // create teble data
+  generateTableRows(DB_table, tableData);
+}
+
+function generateTableRows(DB_table, data) {
+    var body_html = '<tbody _ngcontent-c15=""><tr _ngcontent-c15="" class=" row-highlight-red">';
+    for (let i = 0; i < data.length; i++){
+        let tmp_row = DB_table.insertRow(-1);
+        let last_name = data[i].lastName;
+        let first_name = data[i].firstName;
+        let DOB = data[i].dob;
+        let job_number = data[i].jobNumber;
+        let reason = data[i].testReasonDescription;
+        let company = data[i].companyName;
+        let db_status = data[i].status;
+        let last_update = data[i].lastUpdate;
+        let visit_date = "";
+        body_html = body_html + '<tr><td _ngcontent-c15="" class="fit"><div _ngcontent-c15="" class="button-container">';
+        body_html = body_html + '<div _ngcontent-c15=""><span _ngcontent-c15="" class="input-group-btn fix-span">';
+        body_html = body_html + '<button _ngcontent-c15="" class="grid-btn btn btn-sm btn-raised btn-success" type="button" title="">';
+        body_html = body_html + '<i _ngcontent-c15="" class="fa fa-fw fa-edit"></i></button></span></div></div></td>';
+        body_html = body_html + '<td _ngcontent-c15=""><span _ngcontent-c15="">' + last_name + '</span></td>';
+        body_html = body_html + '<td _ngcontent-c15=""><span _ngcontent-c15="">' + first_name + '</span></td>';
+        body_html = body_html + '<td _ngcontent-c15=""><span _ngcontent-c15="">' + DOB + '</span></td>';
+        body_html = body_html + '<td _ngcontent-c15=""><span _ngcontent-c15="">' + job_number + '</span></td>';
+        body_html = body_html + '<td _ngcontent-c15=""><span _ngcontent-c15="">' + reason + '</span></td>';
+        body_html = body_html + '<td _ngcontent-c15=""><span _ngcontent-c15="">' + company + '</span></td>';
+        body_html = body_html + '<td _ngcontent-c15=""><span _ngcontent-c15="">' + db_status + '</span></td>';
+        body_html = body_html + '<td _ngcontent-c15=""><span _ngcontent-c15="">' + last_update + '</span></td>';
+        body_html = body_html + '<td _ngcontent-c15=""><span _ngcontent-c15=""> </span></td></tr>';
+    } 
+    body_html = body_html + '<tr _ngcontent-c15="" class=" row-highlight-red"></tr></tbody>';
+    DB_table.innerHTML += body_html;
+}

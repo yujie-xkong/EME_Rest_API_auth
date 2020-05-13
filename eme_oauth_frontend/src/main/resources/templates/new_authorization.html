@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta content="IE=10.0000" http-equiv="X-UA-Compatible" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime EME </title>
+    <link href="../static/eme/css/eme.css" rel="stylesheet"/>
+
+    <meta name="description" content="Prime Occupational Medicine EME System" />
+    <script src="https://kit.fontawesome.com/51dfe55888.js" crossorigin="anonymous"></script>
+</head>
+<body class="UAT">
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="/" class="navbar-brand">
+                        <img src="../static/eme/assets/images/prime_transparent_logo.png" height="25" />
+                </a>
+            </div>
+            <div class="navbar-collapse collapse">
+<ul class="nav navbar-nav navbar-left">
+            <li>
+                <a href="dashboard.html">
+                    <i class="fa fa-2x fa-dashboard" style="color: #fff"></i> <span class="nav-link">Dashboard</span>
+                </a>
+            </li>
+        <li>
+            <a href="new_authorization.html">
+                <i class="fa fa-2x fa-users" style="color: #fff"></i> <span class="nav-link">New Authorization</span>
+            </a>
+        </li>
+            <li>
+            <a href="/Report">
+                <i class="fa fa-2x fa-bar-chart" style="color: #fff"></i><span class="nav-link">Reports</span>
+            </a>
+        </li>
+
+        <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                <i class="fa fa-2x fa-cog"></i>
+                <span class="nav-link">Administration</span>
+                <span class="caret"></span>
+            </a>
+
+            <ul class="dropdown-menu nav-dropdown-menu" role="menu">
+                                                                                                                                                    <li class="dropdown-item nav-dropdown-item">
+                        <a href="/Administration/Specialist">
+                            <span class="nav-link"><i class="fa fa-stethoscope"></i> Specialist</span>
+                        </a>
+                    </li>
+
+
+            </ul>
+        </li>
+
+</ul>
+                
+        <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                    <i class="fa fa-2x fa-cogs"></i>
+                    <span class="nav-link">demo_casemanager@...</span>
+                    <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu nav-dropdown-menu" role="menu">
+                    <li class="dropdown-item nav-dropdown-item">
+                        <a href="/Account/ChangePassword">
+                            <span class="nav-link"><i class="fa fa-shield"></i> Change Password</span>
+                        </a>
+                    </li>
+                    <li class="dropdown-item nav-dropdown-item">
+                        <a href="/Account/PendingLogOff">
+                            <span class="nav-link"><i class="fa fa-lock"></i> Log off</span>
+                        </a>
+                    </li>
+                </ul>
+
+            </li>
+        </ul>
+
+            </div>
+        </div>
+    </div>
+    <div class="container body-content">
+        
+<span class="metadata prime-dialog-title"><b>Create New Patient</b></span>
+<div class="row">
+    <div class="col-md-12">
+        <h4>Create Authorization</h4>
+        <hr class="divider" />
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-sm-12">
+        <h4>Job Information</h4>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-3">
+        <label class="control-label">Company</label> <span class="required">*</span>
+        <br />
+        <select id="authorization-create-company" name="CompanyId" class="dropdown form-control disable-if-oneOrNone prime-selectize">
+                <option value=""></option>
+        </select>
+    </div>
+
+
+
+    <!--xkong-->
+    <div class="col-md-3">
+        <label class="control-label">Job Number</label> <span class="required">*</span>
+        <br />
+        <select id="authorization-create-job"
+                name="JobId"
+                class="dropdown form-control disable-if-oneOrNone prime-selectize"
+                data-dependency-on="#authorization-create-company"
+                data-dependency-fireonload="#authorization-create-company"
+                data-url="/Ajax/Jobs/UserCreatableJobs"
+                data-option-value="Id"
+                data-option-label="DisplayName"></select>
+    </div>
+
+
+
+
+
+
+    <div class="col-md-3">
+        <label class="control-label">Facility</label> <span class="required">*</span>
+        <br />
+        <select id="authorization-create-clinic" name="ClinicId" class="dropdown form-control disable-if-oneOrNone prime-selectize" data-option-value="Id">
+                <option value=""></option>
+                            <option value="235">Alliance Health Resources</option>
+                <option value="120">Baptist Health, KY</option>
+                <option value="429">Beacon Medical</option>
+                <option value="460">Buena Vista Urgent Care</option>
+                <option value="334">Cajun C</option>
+                <option value="70">CCJV Project</option>
+                <option value="372">Concentra Colorado</option>
+                <option value="433">Concentra Freeport, TX</option>
+                <option value="109">CORE Deer Park, TX</option>
+                <option value="370">Deep South Crane BR</option>
+                <option value="149">Demo Facility</option>
+                <option value="362">Demo Facility 2</option>
+                <option value="199">Downtown Health and Wellness</option>
+                <option value="254">Exxon Baton Rouge</option>
+                <option value="223">Global Health</option>
+                <option value="4271">Iberville Parish Substance Abuse Center</option>
+                <option value="1935">Iqarus Demo</option>
+                <option value="222">Kaliber Occupational Medicine</option>
+                <option value="376">Landmark Occupational Health Clinic</option>
+                <option value="438">Lutech Resources</option>
+                <option value="386">NOVA Medical Conroe</option>
+                <option value="113">Occucare International</option>
+                <option value="5290">Occucare International Houston</option>
+                <option value="58">Occupational Health Center Mobile AL</option>
+                <option value="124">Occupational Med &amp; Drug Testing</option>
+                <option value="230">Occupational Medical Care</option>
+                <option value="821">Ohmestede</option>
+                <option value="393">OMM</option>
+                <option value="190">Phoenix Offshore</option>
+                <option value="4">Prime Occupational Medicine</option>
+                <option value="200">Quality Control Testing, Inc.</option>
+                <option value="125">Rapid Care, TN</option>
+                <option value="44">Sherwood Medical</option>
+                <option value="168">Team Services, LLC</option>
+                <option value="49">Telemedicine - Iowa</option>
+                <option value="63">Test Clinic</option>
+                <option value="390">Texas Industrial Medical</option>
+                <option value="176">Tower Medical Center</option>
+                <option value="177">U.S. HealthWorks</option>
+                <option value="214">Work Well Occupational</option>
+                <option value="118">WorkCare, TN</option>
+        </select>
+    </div>
+    <div class="col-md-3">
+        <label class="control-label">Reason for Visit</label> <span class="required">*</span>
+        <br />
+        <select id="authorization-create-testReason"
+                name="ReasonId"
+                class="dropdown form-control disable-if-oneOrNone prime-selectize"
+                data-dependency-on="#authorization-create-company"
+                data-dependency-fireonload="#authorization-create-company"
+                data-url="/Ajax/Tests/UserCreatableTestReasons"
+                data-option-value="Id"
+                data-option-label="Name"
+                data-option-sortfield="Name">
+            <option value=""></option>
+        </select>
+
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-sm-12">
+        <hr class="divider" />
+    </div>
+</div>
+
+
+
+
+
+<div class="row">
+    <div class="col-sm-12">
+        <h4>Services Requested</h4>
+    </div>
+</div>
+<div class="row" id="test-types">
+    <div class="col-md-6" id="test-type-column-1">
+
+    </div>
+    <div class="col-md-6" id="test-type-column-2">
+  
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-12">
+        <hr class="divider" />
+    </div>
+</div>
+
+
+
+
+
+
+<div class="row">
+    <div class="col-sm-12">
+        <h4>Additional Information</h4>
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-12">
+        <label class="control-label">Notes</label>
+        <textarea id="authorization-comment" class="form-control col-md-9"
+                  name="Comment"
+                  rows="5"
+                  style="max-width: none"></textarea>
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-12">
+        <br>
+        <label class="control-label">Purchase Order #</label>
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-12">
+
+        <textarea id="authorization-purchaseorder-number" class="form-control col-md-9"
+                  name="PurchaseOrderNumber"
+                  rows="1"
+                  maxlength="50"
+                  style="max-width: 25%"></textarea>
+    </div>
+</div>
+<br />
+<div class="row">
+    <div class="col-sm-12">
+        <hr class="divider" />
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-12">
+        <h4>Patients</h4>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <table id="create-authorization-table"
+               data-side-pagination="client"
+               data-pagination="true"
+               data-page-list="[5,10]"
+               data-page-size="5"
+               data-defaults-emptytext="Please search for or create a patient for this authorization"
+               class="table table-striped table-condensed hookup-bootstrap-tables">
+            <thead>
+                <tr>
+                    <th data-formatter="minusIcon" data-align="center" data-events="basicTableEvents" data-trigger="patient-removed"></th>
+                    <th data-field="Contact.FirstName">First Name</th>
+                    <th data-field="Contact.LastName">Last Name</th>
+                    <th data-field="Identifier" data-formatter="formatSSN">ID (SSN)</th>
+                    <th data-field="Contact.DateOfBirth" data-formatter="formatShortDateString">DOB</th>
+                    <th data-field="PhoneNumber" data-formatter="formatPhoneNumber">Phone Number</th>
+                </tr>
+            </thead>
+        </table>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <a href="#" data-dialog-content-url="/Ajax/Patients/Search"
+           data-dialog-title="Search Patients"
+           class="btn btn-primary prime-trigger-modal"
+           disabled="disabled"
+           id="add-patient-button"><i class="fa fa-plus"></i> Add Patient</a>
+        <br />
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <hr class="divider" />
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-sm-12 text-right">
+        <a href="/Ajax/Authorizations/Create"
+           class="btn btn-success has-spinner"
+           id="authorization-create-submit"
+           disabled="disabled">
+            <span class="spinner"><i class="icon-spin icon-refresh"></i></span>
+            <i class="glyphicon glyphicon-check"></i>
+            Submit
+        </a>
+    </div>
+</div>
+    </div>
+<footer id="footer">
+    <br/>
+    <div class="container text-center">
+        <p class="copyright"><i class="glyphicon glyphicon-copyright-mark"></i> 2020 - Prime Medical
+        </p>
+        <p class="copyright"><span>Patent Pending</span></p>
+        <ul class="list-inline" hidden="hidden">
+            <li id="navbar-status-failure" class="site-status"><i class="glyphicon glyphicon-minus-sign"></i></li>
+            <li id="navbar-status-success" class="site-status"><i class="glyphicon glyphicon-ok-sign"></i></li>
+            <li id="navbar-status-alerts" class="site-status"><i class="glyphicon glyphicon-exclamation-sign"></i></li>
+            <li id="navbar-status-warning" class="site-status"><i class="glyphicon glyphicon-warning-sign"></i></li>
+            <li id="navbar-status-information" class="site-status"><i class="glyphicon glyphicon-info-sign"></i></li>
+        </ul>
+        <p class="copyright " style="font-size: .7em">
+            1.25.7416.7579
+            <!--
+
+
+            Build time according to version: 4/21/2020 4:12:38 AM
+            -->
+        </p>
+    </div>
+</footer>
+<script type="text/javascript" src="../static/eme/scripts/new_auth_api.js"></script>
+<script> 
+    get_company_list();
+</script>
+</body>
+</html>
